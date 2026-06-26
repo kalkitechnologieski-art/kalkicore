@@ -1,0 +1,10 @@
+[
+  { "slug": "ai-automation", "title": "AI Automation", "description": "Automate your workflows with AI.", "category": "AI" },
+  { "slug": "seo-services", "title": "SEO Services", "description": "Rank higher on search engines.", "category": "Digital Marketing" },
+  { "slug": "web-development", "title": "Web Development", "description": "Build stunning websites.", "category": "Development" },
+  { "slug": "social-media", "title": "Social Media Management", "description": "Grow your audience.", "category": "Digital Marketing" },
+  { "slug": "gmb-seo", "title": "Google My Business SEO", "description": "Optimise your local presence.", "category": "Local SEO" },
+  { "slug": "linkedin-marketing", "title": "LinkedIn Marketing", "description": "Leverage the power of LinkedIn.", "category": "Social Media" },
+  { "slug": "digital-marketing", "title": "Digital Marketing", "description": "Full service digital marketing.", "category": "Digital Marketing" },
+  { "slug": "ai-chatbots", "title": "AI Chatbots", "description": "Intelligent chatbots for your business.", "category": "AI" }
+]

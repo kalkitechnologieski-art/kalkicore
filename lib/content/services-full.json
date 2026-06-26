@@ -1,0 +1,2758 @@
+[
+  {
+    "slug": "ai-automation",
+    "title": "AI Automation",
+    "category": "AI & Automation",
+    "priceUSD": 1078,
+    "priceINR": 90552,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "seo-services-2",
+    "title": "SEO Services 2",
+    "category": "Digital Marketing",
+    "priceUSD": 639,
+    "priceINR": 53676,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "web-development-3",
+    "title": "Web Development 3",
+    "category": "Development",
+    "priceUSD": 1361,
+    "priceINR": 114324,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "social-media-management-4",
+    "title": "Social Media Management 4",
+    "category": "Content Creation",
+    "priceUSD": 310,
+    "priceINR": 26040,
+    "description": "Boost your online presence.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "gmb-seo-5",
+    "title": "GMB SEO 5",
+    "category": "Consulting",
+    "priceUSD": 202,
+    "priceINR": 16968,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "linkedin-marketing-6",
+    "title": "LinkedIn Marketing 6",
+    "category": "Design",
+    "priceUSD": 826,
+    "priceINR": 69384,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "digital-marketing-7",
+    "title": "Digital Marketing 7",
+    "category": "Local SEO",
+    "priceUSD": 1074,
+    "priceINR": 90216,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "ai-chatbots-8",
+    "title": "AI Chatbots 8",
+    "category": "Social Media",
+    "priceUSD": 599,
+    "priceINR": 50316,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "video-production-9",
+    "title": "Video Production 9",
+    "category": "AI & Automation",
+    "priceUSD": 1506,
+    "priceINR": 126504,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "content-writing-10",
+    "title": "Content Writing 10",
+    "category": "Digital Marketing",
+    "priceUSD": 632,
+    "priceINR": 53088,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "e-commerce-development-11",
+    "title": "E‑Commerce Development 11",
+    "category": "Development",
+    "priceUSD": 1121,
+    "priceINR": 94164,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "cloud-consulting-12",
+    "title": "Cloud Consulting 12",
+    "category": "Content Creation",
+    "priceUSD": 294,
+    "priceINR": 24696,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "data-science-13",
+    "title": "Data Science 13",
+    "category": "Consulting",
+    "priceUSD": 976,
+    "priceINR": 81984,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "mobile-app-development-14",
+    "title": "Mobile App Development 14",
+    "category": "Design",
+    "priceUSD": 165,
+    "priceINR": 13860,
+    "description": "Boost your online presence.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "brand-strategy-15",
+    "title": "Brand Strategy 15",
+    "category": "Local SEO",
+    "priceUSD": 260,
+    "priceINR": 21840,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "cybersecurity-16",
+    "title": "Cybersecurity 16",
+    "category": "Social Media",
+    "priceUSD": 543,
+    "priceINR": 45612,
+    "description": "Tailored to your needs.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "blockchain-development-17",
+    "title": "Blockchain Development 17",
+    "category": "AI & Automation",
+    "priceUSD": 201,
+    "priceINR": 16884,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "ux-ui-design-18",
+    "title": "UX/UI Design 18",
+    "category": "Digital Marketing",
+    "priceUSD": 329,
+    "priceINR": 27636,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "it-support-19",
+    "title": "IT Support 19",
+    "category": "Development",
+    "priceUSD": 646,
+    "priceINR": 54264,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "voice-ai-20",
+    "title": "Voice AI 20",
+    "category": "Content Creation",
+    "priceUSD": 682,
+    "priceINR": 57288,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "ar-vr-development-21",
+    "title": "AR/VR Development 21",
+    "category": "Consulting",
+    "priceUSD": 1317,
+    "priceINR": 110628,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "digital-transformation-22",
+    "title": "Digital Transformation 22",
+    "category": "Design",
+    "priceUSD": 1454,
+    "priceINR": 122136,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "social-media-ads-23",
+    "title": "Social Media Ads 23",
+    "category": "Local SEO",
+    "priceUSD": 1462,
+    "priceINR": 122808,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "email-marketing-24",
+    "title": "Email Marketing 24",
+    "category": "Social Media",
+    "priceUSD": 399,
+    "priceINR": 33516,
+    "description": "Boost your online presence.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "influencer-marketing-25",
+    "title": "Influencer Marketing 25",
+    "category": "AI & Automation",
+    "priceUSD": 968,
+    "priceINR": 81312,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "ai-content-generation-26",
+    "title": "AI Content Generation 26",
+    "category": "Digital Marketing",
+    "priceUSD": 1372,
+    "priceINR": 115248,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "business-intelligence-27",
+    "title": "Business Intelligence 27",
+    "category": "Development",
+    "priceUSD": 1185,
+    "priceINR": 99540,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "crm-implementation-28",
+    "title": "CRM Implementation 28",
+    "category": "Content Creation",
+    "priceUSD": 423,
+    "priceINR": 35532,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "qa-testing-29",
+    "title": "QA Testing 29",
+    "category": "Consulting",
+    "priceUSD": 1257,
+    "priceINR": 105588,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "devops-services-30",
+    "title": "DevOps Services 30",
+    "category": "Design",
+    "priceUSD": 162,
+    "priceINR": 13608,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "data-warehousing-31",
+    "title": "Data Warehousing 31",
+    "category": "Local SEO",
+    "priceUSD": 480,
+    "priceINR": 40320,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "machine-learning-32",
+    "title": "Machine Learning 32",
+    "category": "Social Media",
+    "priceUSD": 829,
+    "priceINR": 69636,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "power-bi-consulting-33",
+    "title": "Power BI Consulting 33",
+    "category": "AI & Automation",
+    "priceUSD": 1215,
+    "priceINR": 102060,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "tableau-services-34",
+    "title": "Tableau Services 34",
+    "category": "Digital Marketing",
+    "priceUSD": 591,
+    "priceINR": 49644,
+    "description": "Boost your online presence.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "aws-cloud-services-35",
+    "title": "AWS Cloud Services 35",
+    "category": "Development",
+    "priceUSD": 961,
+    "priceINR": 80724,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "azure-services-36",
+    "title": "Azure Services 36",
+    "category": "Content Creation",
+    "priceUSD": 486,
+    "priceINR": 40824,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "google-cloud-37",
+    "title": "Google Cloud 37",
+    "category": "Consulting",
+    "priceUSD": 761,
+    "priceINR": 63924,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "sap-consulting-38",
+    "title": "SAP Consulting 38",
+    "category": "Design",
+    "priceUSD": 516,
+    "priceINR": 43344,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "salesforce-consulting-39",
+    "title": "Salesforce Consulting 39",
+    "category": "Local SEO",
+    "priceUSD": 1024,
+    "priceINR": 86016,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "hubspot-services-40",
+    "title": "HubSpot Services 40",
+    "category": "Social Media",
+    "priceUSD": 985,
+    "priceINR": 82740,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "zoho-crm-41",
+    "title": "Zoho CRM 41",
+    "category": "AI & Automation",
+    "priceUSD": 748,
+    "priceINR": 62832,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "shopify-development-42",
+    "title": "Shopify Development 42",
+    "category": "Digital Marketing",
+    "priceUSD": 585,
+    "priceINR": 49140,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "wordpress-development-43",
+    "title": "WordPress Development 43",
+    "category": "Development",
+    "priceUSD": 977,
+    "priceINR": 82068,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "drupal-development-44",
+    "title": "Drupal Development 44",
+    "category": "Content Creation",
+    "priceUSD": 824,
+    "priceINR": 69216,
+    "description": "Boost your online presence.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "magento-development-45",
+    "title": "Magento Development 45",
+    "category": "Consulting",
+    "priceUSD": 358,
+    "priceINR": 30072,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "node-js-development-46",
+    "title": "Node.js Development 46",
+    "category": "Design",
+    "priceUSD": 1004,
+    "priceINR": 84336,
+    "description": "Tailored to your needs.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "python-development-47",
+    "title": "Python Development 47",
+    "category": "Local SEO",
+    "priceUSD": 686,
+    "priceINR": 57624,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "java-development-48",
+    "title": "Java Development 48",
+    "category": "Social Media",
+    "priceUSD": 864,
+    "priceINR": 72576,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "-net-development-49",
+    "title": ".NET Development 49",
+    "category": "AI & Automation",
+    "priceUSD": 1540,
+    "priceINR": 129360,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "ruby-on-rails-50",
+    "title": "Ruby on Rails 50",
+    "category": "Digital Marketing",
+    "priceUSD": 831,
+    "priceINR": 69804,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "laravel-development-51",
+    "title": "Laravel Development 51",
+    "category": "Development",
+    "priceUSD": 428,
+    "priceINR": 35952,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "nestjs-development-52",
+    "title": "NestJS Development 52",
+    "category": "Content Creation",
+    "priceUSD": 1376,
+    "priceINR": 115584,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "flutter-development-53",
+    "title": "Flutter Development 53",
+    "category": "Consulting",
+    "priceUSD": 1122,
+    "priceINR": 94248,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "react-native-development-54",
+    "title": "React Native Development 54",
+    "category": "Design",
+    "priceUSD": 344,
+    "priceINR": 28896,
+    "description": "Boost your online presence.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "ionic-app-development-55",
+    "title": "Ionic App Development 55",
+    "category": "Local SEO",
+    "priceUSD": 786,
+    "priceINR": 66024,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "xamarin-development-56",
+    "title": "Xamarin Development 56",
+    "category": "Social Media",
+    "priceUSD": 307,
+    "priceINR": 25788,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "game-development-57",
+    "title": "Game Development 57",
+    "category": "AI & Automation",
+    "priceUSD": 624,
+    "priceINR": 52416,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "metaverse-development-58",
+    "title": "Metaverse Development 58",
+    "category": "Digital Marketing",
+    "priceUSD": 889,
+    "priceINR": 74676,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "smart-contract-audit-59",
+    "title": "Smart Contract Audit 59",
+    "category": "Development",
+    "priceUSD": 225,
+    "priceINR": 18900,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "defi-development-60",
+    "title": "DeFi Development 60",
+    "category": "Content Creation",
+    "priceUSD": 1045,
+    "priceINR": 87780,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "nft-development-61",
+    "title": "NFT Development 61",
+    "category": "Consulting",
+    "priceUSD": 1229,
+    "priceINR": 103236,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "dao-development-62",
+    "title": "DAO Development 62",
+    "category": "Design",
+    "priceUSD": 805,
+    "priceINR": 67620,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "ai-research-63",
+    "title": "AI Research 63",
+    "category": "Local SEO",
+    "priceUSD": 196,
+    "priceINR": 16464,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "computer-vision-64",
+    "title": "Computer Vision 64",
+    "category": "Social Media",
+    "priceUSD": 1081,
+    "priceINR": 90804,
+    "description": "Boost your online presence.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "nlp-services-65",
+    "title": "NLP Services 65",
+    "category": "AI & Automation",
+    "priceUSD": 395,
+    "priceINR": 33180,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "speech-recognition-66",
+    "title": "Speech Recognition 66",
+    "category": "Digital Marketing",
+    "priceUSD": 1191,
+    "priceINR": 100044,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "generative-ai-67",
+    "title": "Generative AI 67",
+    "category": "Development",
+    "priceUSD": 977,
+    "priceINR": 82068,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "recommendation-systems-68",
+    "title": "Recommendation Systems 68",
+    "category": "Content Creation",
+    "priceUSD": 878,
+    "priceINR": 73752,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "anomaly-detection-69",
+    "title": "Anomaly Detection 69",
+    "category": "Consulting",
+    "priceUSD": 762,
+    "priceINR": 64008,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "time-series-forecasting-70",
+    "title": "Time Series Forecasting 70",
+    "category": "Design",
+    "priceUSD": 1088,
+    "priceINR": 91392,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "optimization-solutions-71",
+    "title": "Optimization Solutions 71",
+    "category": "Local SEO",
+    "priceUSD": 1398,
+    "priceINR": 117432,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "risk-management-72",
+    "title": "Risk Management 72",
+    "category": "Social Media",
+    "priceUSD": 950,
+    "priceINR": 79800,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "supply-chain-optimization-73",
+    "title": "Supply Chain Optimization 73",
+    "category": "AI & Automation",
+    "priceUSD": 218,
+    "priceINR": 18312,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "hr-analytics-74",
+    "title": "HR Analytics 74",
+    "category": "Digital Marketing",
+    "priceUSD": 1273,
+    "priceINR": 106932,
+    "description": "Boost your online presence.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "sales-analytics-75",
+    "title": "Sales Analytics 75",
+    "category": "Development",
+    "priceUSD": 1138,
+    "priceINR": 95592,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "financial-analytics-76",
+    "title": "Financial Analytics 76",
+    "category": "Content Creation",
+    "priceUSD": 1327,
+    "priceINR": 111468,
+    "description": "Tailored to your needs.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "marketing-analytics-77",
+    "title": "Marketing Analytics 77",
+    "category": "Consulting",
+    "priceUSD": 200,
+    "priceINR": 16800,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "customer-analytics-78",
+    "title": "Customer Analytics 78",
+    "category": "Design",
+    "priceUSD": 1483,
+    "priceINR": 124572,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "web-analytics-79",
+    "title": "Web Analytics 79",
+    "category": "Local SEO",
+    "priceUSD": 1356,
+    "priceINR": 113904,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "social-analytics-80",
+    "title": "Social Analytics 80",
+    "category": "Social Media",
+    "priceUSD": 636,
+    "priceINR": 53424,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "custom-software-development-81",
+    "title": "Custom Software Development 81",
+    "category": "AI & Automation",
+    "priceUSD": 1313,
+    "priceINR": 110292,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "low-code-development-82",
+    "title": "Low‑Code Development 82",
+    "category": "Digital Marketing",
+    "priceUSD": 1319,
+    "priceINR": 110796,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "headless-cms-83",
+    "title": "Headless CMS 83",
+    "category": "Development",
+    "priceUSD": 793,
+    "priceINR": 66612,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "api-development-84",
+    "title": "API Development 84",
+    "category": "Content Creation",
+    "priceUSD": 261,
+    "priceINR": 21924,
+    "description": "Boost your online presence.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "microservices-architecture-85",
+    "title": "Microservices Architecture 85",
+    "category": "Consulting",
+    "priceUSD": 885,
+    "priceINR": 74340,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "containerization-86",
+    "title": "Containerization 86",
+    "category": "Design",
+    "priceUSD": 1107,
+    "priceINR": 92988,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "ci-cd-pipeline-87",
+    "title": "CI/CD Pipeline 87",
+    "category": "Local SEO",
+    "priceUSD": 643,
+    "priceINR": 54012,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "security-testing-88",
+    "title": "Security Testing 88",
+    "category": "Social Media",
+    "priceUSD": 631,
+    "priceINR": 53004,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "performance-optimization-89",
+    "title": "Performance Optimization 89",
+    "category": "AI & Automation",
+    "priceUSD": 157,
+    "priceINR": 13188,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "database-tuning-90",
+    "title": "Database Tuning 90",
+    "category": "Digital Marketing",
+    "priceUSD": 1463,
+    "priceINR": 122892,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "data-migration-91",
+    "title": "Data Migration 91",
+    "category": "Development",
+    "priceUSD": 1545,
+    "priceINR": 129780,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "backup-recovery-92",
+    "title": "Backup & Recovery 92",
+    "category": "Content Creation",
+    "priceUSD": 1050,
+    "priceINR": 88200,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "compliance-audit-93",
+    "title": "Compliance Audit 93",
+    "category": "Consulting",
+    "priceUSD": 160,
+    "priceINR": 13440,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "training-services-94",
+    "title": "Training Services 94",
+    "category": "Design",
+    "priceUSD": 674,
+    "priceINR": 56616,
+    "description": "Boost your online presence.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "digital-adoption-95",
+    "title": "Digital Adoption 95",
+    "category": "Local SEO",
+    "priceUSD": 713,
+    "priceINR": 59892,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "product-strategy-96",
+    "title": "Product Strategy 96",
+    "category": "Social Media",
+    "priceUSD": 422,
+    "priceINR": 35448,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "innovation-lab-97",
+    "title": "Innovation Lab 97",
+    "category": "AI & Automation",
+    "priceUSD": 939,
+    "priceINR": 78876,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "design-sprint-98",
+    "title": "Design Sprint 98",
+    "category": "Digital Marketing",
+    "priceUSD": 878,
+    "priceINR": 73752,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "ux-research-99",
+    "title": "UX Research 99",
+    "category": "Development",
+    "priceUSD": 1527,
+    "priceINR": 128268,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "service-design-100",
+    "title": "Service Design 100",
+    "category": "Content Creation",
+    "priceUSD": 552,
+    "priceINR": 46368,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "brand-audit-101",
+    "title": "Brand Audit 101",
+    "category": "Consulting",
+    "priceUSD": 160,
+    "priceINR": 13440,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "content-strategy-102",
+    "title": "Content Strategy 102",
+    "category": "Design",
+    "priceUSD": 559,
+    "priceINR": 46956,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "seo-audit-103",
+    "title": "SEO Audit 103",
+    "category": "Local SEO",
+    "priceUSD": 1151,
+    "priceINR": 96684,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "paid-search-ads-104",
+    "title": "Paid Search Ads 104",
+    "category": "Social Media",
+    "priceUSD": 1036,
+    "priceINR": 87024,
+    "description": "Boost your online presence.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "retargeting-campaigns-105",
+    "title": "Retargeting Campaigns 105",
+    "category": "AI & Automation",
+    "priceUSD": 1487,
+    "priceINR": 124908,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "affiliate-marketing-106",
+    "title": "Affiliate Marketing 106",
+    "category": "Digital Marketing",
+    "priceUSD": 1231,
+    "priceINR": 103404,
+    "description": "Tailored to your needs.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "influencer-outreach-107",
+    "title": "Influencer Outreach 107",
+    "category": "Development",
+    "priceUSD": 626,
+    "priceINR": 52584,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "viral-marketing-108",
+    "title": "Viral Marketing 108",
+    "category": "Content Creation",
+    "priceUSD": 663,
+    "priceINR": 55692,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "lead-generation-109",
+    "title": "Lead Generation 109",
+    "category": "Consulting",
+    "priceUSD": 1116,
+    "priceINR": 93744,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "conversion-rate-optimization-110",
+    "title": "Conversion Rate Optimization 110",
+    "category": "Design",
+    "priceUSD": 638,
+    "priceINR": 53592,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "marketing-automation-111",
+    "title": "Marketing Automation 111",
+    "category": "Local SEO",
+    "priceUSD": 204,
+    "priceINR": 17136,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "customer-engagement-112",
+    "title": "Customer Engagement 112",
+    "category": "Social Media",
+    "priceUSD": 560,
+    "priceINR": 47040,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "account-based-marketing-113",
+    "title": "Account‑Based Marketing 113",
+    "category": "AI & Automation",
+    "priceUSD": 1514,
+    "priceINR": 127176,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "brand-awareness-114",
+    "title": "Brand Awareness 114",
+    "category": "Digital Marketing",
+    "priceUSD": 615,
+    "priceINR": 51660,
+    "description": "Boost your online presence.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "reputation-management-115",
+    "title": "Reputation Management 115",
+    "category": "Development",
+    "priceUSD": 1576,
+    "priceINR": 132384,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "podcast-marketing-116",
+    "title": "Podcast Marketing 116",
+    "category": "Content Creation",
+    "priceUSD": 480,
+    "priceINR": 40320,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "webinar-hosting-117",
+    "title": "Webinar Hosting 117",
+    "category": "Consulting",
+    "priceUSD": 185,
+    "priceINR": 15540,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "event-marketing-118",
+    "title": "Event Marketing 118",
+    "category": "Design",
+    "priceUSD": 861,
+    "priceINR": 72324,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "trade-show-marketing-119",
+    "title": "Trade Show Marketing 119",
+    "category": "Local SEO",
+    "priceUSD": 1297,
+    "priceINR": 108948,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "public-relations-120",
+    "title": "Public Relations 120",
+    "category": "Social Media",
+    "priceUSD": 742,
+    "priceINR": 62328,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "investor-relations-121",
+    "title": "Investor Relations 121",
+    "category": "AI & Automation",
+    "priceUSD": 1085,
+    "priceINR": 91140,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "esg-consulting-122",
+    "title": "ESG Consulting 122",
+    "category": "Digital Marketing",
+    "priceUSD": 338,
+    "priceINR": 28392,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "sustainability-consulting-123",
+    "title": "Sustainability Consulting 123",
+    "category": "Development",
+    "priceUSD": 342,
+    "priceINR": 28728,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "diversity-inclusion-124",
+    "title": "Diversity & Inclusion 124",
+    "category": "Content Creation",
+    "priceUSD": 496,
+    "priceINR": 41664,
+    "description": "Boost your online presence.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "employee-wellness-125",
+    "title": "Employee Wellness 125",
+    "category": "Consulting",
+    "priceUSD": 1264,
+    "priceINR": 106176,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "leadership-coaching-126",
+    "title": "Leadership Coaching 126",
+    "category": "Design",
+    "priceUSD": 513,
+    "priceINR": 43092,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "team-building-127",
+    "title": "Team Building 127",
+    "category": "Local SEO",
+    "priceUSD": 908,
+    "priceINR": 76272,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "remote-work-consulting-128",
+    "title": "Remote Work Consulting 128",
+    "category": "Social Media",
+    "priceUSD": 248,
+    "priceINR": 20832,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "office-design-129",
+    "title": "Office Design 129",
+    "category": "AI & Automation",
+    "priceUSD": 612,
+    "priceINR": 51408,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "corporate-training-130",
+    "title": "Corporate Training 130",
+    "category": "Digital Marketing",
+    "priceUSD": 1149,
+    "priceINR": 96516,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "future-of-work-131",
+    "title": "Future of Work 131",
+    "category": "Development",
+    "priceUSD": 355,
+    "priceINR": 29820,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "ai-strategy-132",
+    "title": "AI Strategy 132",
+    "category": "Content Creation",
+    "priceUSD": 779,
+    "priceINR": 65436,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "data-strategy-133",
+    "title": "Data Strategy 133",
+    "category": "Consulting",
+    "priceUSD": 380,
+    "priceINR": 31920,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "cloud-strategy-134",
+    "title": "Cloud Strategy 134",
+    "category": "Design",
+    "priceUSD": 226,
+    "priceINR": 18984,
+    "description": "Boost your online presence.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "digital-product-consulting-135",
+    "title": "Digital Product Consulting 135",
+    "category": "Local SEO",
+    "priceUSD": 527,
+    "priceINR": 44268,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "startup-consulting-136",
+    "title": "Startup Consulting 136",
+    "category": "Social Media",
+    "priceUSD": 293,
+    "priceINR": 24612,
+    "description": "Tailored to your needs.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "pitch-deck-design-137",
+    "title": "Pitch Deck Design 137",
+    "category": "AI & Automation",
+    "priceUSD": 413,
+    "priceINR": 34692,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "business-planning-138",
+    "title": "Business Planning 138",
+    "category": "Digital Marketing",
+    "priceUSD": 497,
+    "priceINR": 41748,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "market-research-139",
+    "title": "Market Research 139",
+    "category": "Development",
+    "priceUSD": 163,
+    "priceINR": 13692,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "competitive-analysis-140",
+    "title": "Competitive Analysis 140",
+    "category": "Content Creation",
+    "priceUSD": 848,
+    "priceINR": 71232,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "product-market-fit-141",
+    "title": "Product‑Market Fit 141",
+    "category": "Consulting",
+    "priceUSD": 453,
+    "priceINR": 38052,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "ux-audit-142",
+    "title": "UX Audit 142",
+    "category": "Design",
+    "priceUSD": 1418,
+    "priceINR": 119112,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "accessibility-consulting-143",
+    "title": "Accessibility Consulting 143",
+    "category": "Local SEO",
+    "priceUSD": 192,
+    "priceINR": 16128,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "design-thinking-144",
+    "title": "Design Thinking 144",
+    "category": "Social Media",
+    "priceUSD": 1484,
+    "priceINR": 124656,
+    "description": "Boost your online presence.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "agile-coaching-145",
+    "title": "Agile Coaching 145",
+    "category": "AI & Automation",
+    "priceUSD": 1311,
+    "priceINR": 110124,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "scrum-master-146",
+    "title": "Scrum Master 146",
+    "category": "Digital Marketing",
+    "priceUSD": 1219,
+    "priceINR": 102396,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "devsecops-147",
+    "title": "DevSecOps 147",
+    "category": "Development",
+    "priceUSD": 496,
+    "priceINR": 41664,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "site-reliability-engineering-148",
+    "title": "Site Reliability Engineering 148",
+    "category": "Content Creation",
+    "priceUSD": 1333,
+    "priceINR": 111972,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "digital-experience-149",
+    "title": "Digital Experience 149",
+    "category": "Consulting",
+    "priceUSD": 215,
+    "priceINR": 18060,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "customer-support-150",
+    "title": "Customer Support 150",
+    "category": "Design",
+    "priceUSD": 1341,
+    "priceINR": 112644,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "ai-automation-151",
+    "title": "AI Automation 151",
+    "category": "Local SEO",
+    "priceUSD": 1529,
+    "priceINR": 128436,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "seo-services-152",
+    "title": "SEO Services 152",
+    "category": "Social Media",
+    "priceUSD": 233,
+    "priceINR": 19572,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "web-development-153",
+    "title": "Web Development 153",
+    "category": "AI & Automation",
+    "priceUSD": 998,
+    "priceINR": 83832,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "social-media-management-154",
+    "title": "Social Media Management 154",
+    "category": "Digital Marketing",
+    "priceUSD": 266,
+    "priceINR": 22344,
+    "description": "Boost your online presence.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "gmb-seo-155",
+    "title": "GMB SEO 155",
+    "category": "Development",
+    "priceUSD": 1339,
+    "priceINR": 112476,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "linkedin-marketing-156",
+    "title": "LinkedIn Marketing 156",
+    "category": "Content Creation",
+    "priceUSD": 1190,
+    "priceINR": 99960,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "digital-marketing-157",
+    "title": "Digital Marketing 157",
+    "category": "Consulting",
+    "priceUSD": 262,
+    "priceINR": 22008,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "ai-chatbots-158",
+    "title": "AI Chatbots 158",
+    "category": "Design",
+    "priceUSD": 1541,
+    "priceINR": 129444,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "video-production-159",
+    "title": "Video Production 159",
+    "category": "Local SEO",
+    "priceUSD": 1159,
+    "priceINR": 97356,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "content-writing-160",
+    "title": "Content Writing 160",
+    "category": "Social Media",
+    "priceUSD": 1225,
+    "priceINR": 102900,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "e-commerce-development-161",
+    "title": "E‑Commerce Development 161",
+    "category": "AI & Automation",
+    "priceUSD": 194,
+    "priceINR": 16296,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "cloud-consulting-162",
+    "title": "Cloud Consulting 162",
+    "category": "Digital Marketing",
+    "priceUSD": 1259,
+    "priceINR": 105756,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "data-science-163",
+    "title": "Data Science 163",
+    "category": "Development",
+    "priceUSD": 1012,
+    "priceINR": 85008,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "mobile-app-development-164",
+    "title": "Mobile App Development 164",
+    "category": "Content Creation",
+    "priceUSD": 1073,
+    "priceINR": 90132,
+    "description": "Boost your online presence.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "brand-strategy-165",
+    "title": "Brand Strategy 165",
+    "category": "Consulting",
+    "priceUSD": 694,
+    "priceINR": 58296,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "cybersecurity-166",
+    "title": "Cybersecurity 166",
+    "category": "Design",
+    "priceUSD": 1235,
+    "priceINR": 103740,
+    "description": "Tailored to your needs.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "blockchain-development-167",
+    "title": "Blockchain Development 167",
+    "category": "Local SEO",
+    "priceUSD": 1010,
+    "priceINR": 84840,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "ux-ui-design-168",
+    "title": "UX/UI Design 168",
+    "category": "Social Media",
+    "priceUSD": 1352,
+    "priceINR": 113568,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "it-support-169",
+    "title": "IT Support 169",
+    "category": "AI & Automation",
+    "priceUSD": 767,
+    "priceINR": 64428,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "voice-ai-170",
+    "title": "Voice AI 170",
+    "category": "Digital Marketing",
+    "priceUSD": 809,
+    "priceINR": 67956,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "ar-vr-development-171",
+    "title": "AR/VR Development 171",
+    "category": "Development",
+    "priceUSD": 1567,
+    "priceINR": 131628,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "digital-transformation-172",
+    "title": "Digital Transformation 172",
+    "category": "Content Creation",
+    "priceUSD": 823,
+    "priceINR": 69132,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "social-media-ads-173",
+    "title": "Social Media Ads 173",
+    "category": "Consulting",
+    "priceUSD": 643,
+    "priceINR": 54012,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "email-marketing-174",
+    "title": "Email Marketing 174",
+    "category": "Design",
+    "priceUSD": 759,
+    "priceINR": 63756,
+    "description": "Boost your online presence.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "influencer-marketing-175",
+    "title": "Influencer Marketing 175",
+    "category": "Local SEO",
+    "priceUSD": 587,
+    "priceINR": 49308,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "ai-content-generation-176",
+    "title": "AI Content Generation 176",
+    "category": "Social Media",
+    "priceUSD": 1459,
+    "priceINR": 122556,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "business-intelligence-177",
+    "title": "Business Intelligence 177",
+    "category": "AI & Automation",
+    "priceUSD": 284,
+    "priceINR": 23856,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "crm-implementation-178",
+    "title": "CRM Implementation 178",
+    "category": "Digital Marketing",
+    "priceUSD": 154,
+    "priceINR": 12936,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "qa-testing-179",
+    "title": "QA Testing 179",
+    "category": "Development",
+    "priceUSD": 1581,
+    "priceINR": 132804,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "devops-services-180",
+    "title": "DevOps Services 180",
+    "category": "Content Creation",
+    "priceUSD": 549,
+    "priceINR": 46116,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "data-warehousing-181",
+    "title": "Data Warehousing 181",
+    "category": "Consulting",
+    "priceUSD": 1116,
+    "priceINR": 93744,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "machine-learning-182",
+    "title": "Machine Learning 182",
+    "category": "Design",
+    "priceUSD": 487,
+    "priceINR": 40908,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "power-bi-consulting-183",
+    "title": "Power BI Consulting 183",
+    "category": "Local SEO",
+    "priceUSD": 319,
+    "priceINR": 26796,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "tableau-services-184",
+    "title": "Tableau Services 184",
+    "category": "Social Media",
+    "priceUSD": 393,
+    "priceINR": 33012,
+    "description": "Boost your online presence.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "aws-cloud-services-185",
+    "title": "AWS Cloud Services 185",
+    "category": "AI & Automation",
+    "priceUSD": 944,
+    "priceINR": 79296,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "azure-services-186",
+    "title": "Azure Services 186",
+    "category": "Digital Marketing",
+    "priceUSD": 318,
+    "priceINR": 26712,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "google-cloud-187",
+    "title": "Google Cloud 187",
+    "category": "Development",
+    "priceUSD": 847,
+    "priceINR": 71148,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "sap-consulting-188",
+    "title": "SAP Consulting 188",
+    "category": "Content Creation",
+    "priceUSD": 498,
+    "priceINR": 41832,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "salesforce-consulting-189",
+    "title": "Salesforce Consulting 189",
+    "category": "Consulting",
+    "priceUSD": 297,
+    "priceINR": 24948,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "hubspot-services-190",
+    "title": "HubSpot Services 190",
+    "category": "Design",
+    "priceUSD": 726,
+    "priceINR": 60984,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "zoho-crm-191",
+    "title": "Zoho CRM 191",
+    "category": "Local SEO",
+    "priceUSD": 1066,
+    "priceINR": 89544,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "shopify-development-192",
+    "title": "Shopify Development 192",
+    "category": "Social Media",
+    "priceUSD": 1108,
+    "priceINR": 93072,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "wordpress-development-193",
+    "title": "WordPress Development 193",
+    "category": "AI & Automation",
+    "priceUSD": 293,
+    "priceINR": 24612,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "drupal-development-194",
+    "title": "Drupal Development 194",
+    "category": "Digital Marketing",
+    "priceUSD": 1053,
+    "priceINR": 88452,
+    "description": "Boost your online presence.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "magento-development-195",
+    "title": "Magento Development 195",
+    "category": "Development",
+    "priceUSD": 784,
+    "priceINR": 65856,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "node-js-development-196",
+    "title": "Node.js Development 196",
+    "category": "Content Creation",
+    "priceUSD": 1110,
+    "priceINR": 93240,
+    "description": "Tailored to your needs.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "python-development-197",
+    "title": "Python Development 197",
+    "category": "Consulting",
+    "priceUSD": 196,
+    "priceINR": 16464,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "java-development-198",
+    "title": "Java Development 198",
+    "category": "Design",
+    "priceUSD": 402,
+    "priceINR": 33768,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "-net-development-199",
+    "title": ".NET Development 199",
+    "category": "Local SEO",
+    "priceUSD": 570,
+    "priceINR": 47880,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "ruby-on-rails-200",
+    "title": "Ruby on Rails 200",
+    "category": "Social Media",
+    "priceUSD": 1158,
+    "priceINR": 97272,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "laravel-development-201",
+    "title": "Laravel Development 201",
+    "category": "AI & Automation",
+    "priceUSD": 763,
+    "priceINR": 64092,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "nestjs-development-202",
+    "title": "NestJS Development 202",
+    "category": "Digital Marketing",
+    "priceUSD": 1499,
+    "priceINR": 125916,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "flutter-development-203",
+    "title": "Flutter Development 203",
+    "category": "Development",
+    "priceUSD": 1102,
+    "priceINR": 92568,
+    "description": "Scalable, secure, and fast.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "react-native-development-204",
+    "title": "React Native Development 204",
+    "category": "Content Creation",
+    "priceUSD": 963,
+    "priceINR": 80892,
+    "description": "Boost your online presence.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "ionic-app-development-205",
+    "title": "Ionic App Development 205",
+    "category": "Consulting",
+    "priceUSD": 1371,
+    "priceINR": 115164,
+    "description": "Maximize your ROI.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "xamarin-development-206",
+    "title": "Xamarin Development 206",
+    "category": "Design",
+    "priceUSD": 1349,
+    "priceINR": 113316,
+    "description": "Tailored to your needs.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  },
+  {
+    "slug": "game-development-207",
+    "title": "Game Development 207",
+    "category": "Local SEO",
+    "priceUSD": 1385,
+    "priceINR": 116340,
+    "description": "Innovative and reliable.",
+    "features": [
+      "Fast deployment",
+      "Integrated",
+      "Secure"
+    ]
+  },
+  {
+    "slug": "metaverse-development-208",
+    "title": "Metaverse Development 208",
+    "category": "Social Media",
+    "priceUSD": 1201,
+    "priceINR": 100884,
+    "description": "Trusted by industry leaders.",
+    "features": [
+      "User‑friendly",
+      "Cost‑effective",
+      "AI‑powered"
+    ]
+  },
+  {
+    "slug": "smart-contract-audit-209",
+    "title": "Smart Contract Audit 209",
+    "category": "AI & Automation",
+    "priceUSD": 323,
+    "priceINR": 27132,
+    "description": "Future‑proof your business.",
+    "features": [
+      "Enterprise‑grade",
+      "Reliable",
+      "Global reach"
+    ]
+  },
+  {
+    "slug": "defi-development-210",
+    "title": "DeFi Development 210",
+    "category": "Digital Marketing",
+    "priceUSD": 546,
+    "priceINR": 45864,
+    "description": "Unlock new opportunities.",
+    "features": [
+      "Personalized",
+      "Agile",
+      "Transparent pricing"
+    ]
+  },
+  {
+    "slug": "nft-development-211",
+    "title": "NFT Development 211",
+    "category": "Development",
+    "priceUSD": 605,
+    "priceINR": 50820,
+    "description": "Cutting‑edge solution for modern businesses.",
+    "features": [
+      "Custom solutions",
+      "24/7 support",
+      "Data‑driven"
+    ]
+  },
+  {
+    "slug": "dao-development-212",
+    "title": "DAO Development 212",
+    "category": "Content Creation",
+    "priceUSD": 267,
+    "priceINR": 22428,
+    "description": "Expert service to drive growth.",
+    "features": [
+      "Expert consulting",
+      "Proven results",
+      "Scalable"
+    ]
+  }
+]

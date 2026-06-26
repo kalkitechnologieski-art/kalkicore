@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "introducing-kalki-6-0",
+    "title": "Introducing KALKI 6.0 – The Fastest Inference Engine",
+    "excerpt": "We're proud to announce KALKI 6.0, the most advanced AI inference engine ever built.",
+    "date": "June 24, 2026",
+    "author": "Nikhil Singh",
+    "category": "AI",
+    "content": "**KALKI 6.0** is here. With sub‑100ms latency, distributed inference, and full WebGPU acceleration, it redefines what's possible in the browser. Learn how we built it and what it means for the future of AI."
+  },
+  {
+    "slug": "why-distributed-inference-matters",
+    "title": "Why Distributed Inference Matters",
+    "excerpt": "Distributed inference is the key to scalable, private AI. Here's why.",
+    "date": "June 22, 2026",
+    "author": "Priya Patel",
+    "category": "Technology",
+    "content": "Traditional AI runs on centralised servers. With distributed inference, we can run models on any device, reducing costs and improving privacy."
+  },
+  {
+    "slug": "ai-for-small-businesses",
+    "title": "AI for Small Businesses – A Practical Guide",
+    "excerpt": "How small businesses can leverage AI without breaking the bank.",
+    "date": "June 20, 2026",
+    "author": "Dr. Krishnakant",
+    "category": "Business",
+    "content": "AI is no longer just for tech giants. We break down affordable, actionable AI solutions for SMEs."
+  },
+  {
+    "slug": "seo-in-the-age-of-ai",
+    "title": "SEO in the Age of AI",
+    "excerpt": "How generative AI is changing search engine optimization.",
+    "date": "June 18, 2026",
+    "author": "Acharya Nikhil",
+    "category": "Marketing",
+    "content": "With answer engines and AI overviews, SEO is evolving. We explore the new strategies that work."
+  },
+  {
+    "slug": "building-a-private-ai-stack",
+    "title": "Building a Private AI Stack",
+    "excerpt": "A step‑by‑step guide to building privacy‑first AI applications.",
+    "date": "June 15, 2026",
+    "author": "Rahul Sharma",
+    "category": "Development",
+    "content": "Using WebLLM, WebGPU, and federated learning, you can build AI that never sends data to the cloud."
+  },
+  {
+    "slug": "the-future-of-webgpu",
+    "title": "The Future of WebGPU for AI",
+    "excerpt": "WebGPU is unlocking massive performance gains for in‑browser AI.",
+    "date": "June 12, 2026",
+    "author": "Nikhil Singh",
+    "category": "Technology",
+    "content": "With WebGPU support growing, we can run models at near‑native speeds. We examine what's next."
+  },
+  {
+    "slug": "ai-ethics-and-bias",
+    "title": "AI Ethics and Bias – Navigating the Challenges",
+    "excerpt": "How to build fair, transparent AI systems.",
+    "date": "June 10, 2026",
+    "author": "Priya Patel",
+    "category": "Ethics",
+    "content": "Bias in AI is a serious concern. We discuss strategies for detection and mitigation."
+  },
+  {
+    "slug": "zero-trust-security-for-ai",
+    "title": "Zero‑Trust Security for AI Systems",
+    "excerpt": "Protecting AI workloads with zero‑trust architecture.",
+    "date": "June 8, 2026",
+    "author": "Dr. Krishnakant",
+    "category": "Security",
+    "content": "Zero‑trust is the new standard. We show how to apply it to AI infrastructure."
+  },
+  {
+    "slug": "edge-ai-trends-2026",
+    "title": "Edge AI Trends 2026 – What to Watch",
+    "excerpt": "The latest developments in edge AI.",
+    "date": "June 5, 2026",
+    "author": "Rahul Sharma",
+    "category": "Trends",
+    "content": "From on‑device LLMs to distributed inference, edge AI is booming. We highlight the key trends."
+  },
+  {
+    "slug": "ai-for-good",
+    "title": "AI for Good – Solving Global Challenges",
+    "excerpt": "How AI is being used to address climate, health, and education.",
+    "date": "June 3, 2026",
+    "author": "Acharya Nikhil",
+    "category": "Impact",
+    "content": "AI has the potential to solve some of humanity's biggest problems. We explore the most promising initiatives."
+  }
+]
