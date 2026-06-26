@@ -1,0 +1,16 @@
+{
+  "name": "KALKI INTELLIGENCE – Temple of Technology",
+  "short_name": "KALKI AI",
+  "description": "AI‑powered digital marketing, web development, SEO, and private AI.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0F",
+  "theme_color": "#E9B44C",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
