@@ -60,6 +60,7 @@ export function Header() {
                 </div>
               </div>
             </Link>
+            {/* Hamburger button – always visible on mobile */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden p-2 rounded-full hover:bg-white/10 transition-colors relative z-50"
@@ -78,7 +79,7 @@ export function Header() {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed top-0 right-0 h-full w-4/5 max-w-sm glass border-l border-primary/20 p-6 md:hidden overflow-y-auto"
+            className="fixed top-0 right-0 h-full w-4/5 max-w-sm glass border-l border-primary/20 p-6 md:hidden overflow-y-auto z-[100]"
           >
             <div className="flex justify-between items-center mb-12">
               <span className="font-serif text-xl font-bold">KALKI AI</span>
