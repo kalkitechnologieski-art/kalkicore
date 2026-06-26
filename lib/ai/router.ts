@@ -3,24 +3,32 @@ import { TokenManager } from './tokenManager';
 import { NodeRegistry } from './nodeRegistry';
 import { InferenceRequest, InferenceResponse } from './types';
 import { v4 as uuidv4 } from 'uuid';
-import Groq from 'groq-sdk';
 import OpenAI from 'openai';
 import knowledge from '@/lib/content/knowledge.json';
 
-// Initialize clients (with fallback to no-op)
+// ============================================================
+// 1. Initialize Groq Client (Primary)
+// ============================================================
 const groq = process.env.GROQ_API_KEY
-  ? new Groq({ apiKey: process.env.GROQ_API_KEY })
+  ? new OpenAI({
+      baseURL: 'https://api.groq.com/openai/v1',
+      apiKey: process.env.GROQ_API_KEY,
+    })
   : null;
 
+// ============================================================
+// 2. Initialize Zhipu Client (Secondary – FREE tier)
+// ============================================================
 const zhipu = process.env.ZHIPU_API_KEY
-  ? new OpenAI({ baseURL: 'https://open.bigmodel.cn/api/paas/v4', apiKey: process.env.ZHIPU_API_KEY })
+  ? new OpenAI({
+      baseURL: 'https://open.bigmodel.cn/api/paas/v4',
+      apiKey: process.env.ZHIPU_API_KEY,
+    })
   : null;
 
-const cerebras = process.env.CEREBRAS_API_KEY
-  ? new OpenAI({ baseURL: 'https://api.cerebras.ai/v1', apiKey: process.env.CEREBRAS_API_KEY })
-  : null;
-
-// Build system prompt from knowledge base
+// ============================================================
+// 3. System Prompt from Knowledge Base
+// ============================================================
 function buildSystemPrompt(): string {
   let prompt = 'You are KALKI AI, the intelligent assistant for KALKI TECHNOLOGIES – the Temple of Technology. ';
   prompt += `Mission: ${knowledge.brand.mission}. Vision: ${knowledge.brand.vision}. `;
@@ -33,8 +41,9 @@ function buildSystemPrompt(): string {
 
 const SYSTEM_PROMPT = buildSystemPrompt();
 
-// Track provider usage to enforce free tier quotas
-// In production, use Redis to track per user/day.
+// ============================================================
+// 4. Usage Tracker for Free Tier Quotas
+// ============================================================
 const usageTracker: Record<string, { count: number; resetTime: number }> = {};
 
 function checkQuota(provider: string, limit: number = 100): boolean {
@@ -61,6 +70,9 @@ interface ModelResponse {
   error?: string;
 }
 
+// ============================================================
+// 5. Main Router Class
+// ============================================================
 export class InferenceRouter {
   private modelManager: ModelManager;
   private tokenManager: TokenManager;
@@ -75,26 +87,35 @@ export class InferenceRouter {
   async route(request: InferenceRequest): Promise<InferenceResponse> {
     const start = Date.now();
 
-    // 1. Check user quota (from DB)
+    // 1. Check user quota
     const hasQuota = await this.tokenManager.checkQuota(request.userId);
-    if (!hasQuota) throw new Error('Quota exceeded (daily limit).');
+    if (!hasQuota) {
+      throw new Error('Daily quota exceeded. Please try again tomorrow.');
+    }
 
-    // 2. Build the provider list, respecting quotas and availability.
+    // 2. Build provider list with quota checks
     const providers: { name: string; call: () => Promise<ModelResponse> }[] = [];
 
+    // Groq (priority 1)
     if (groq && checkQuota('groq', 50)) {
       providers.push({ name: 'groq', call: () => this.callGroq(request.prompt) });
     }
-    if (zhipu && checkQuota('zhipu', 30)) {
+
+    // Zhipu (priority 2 – free tier)
+    if (zhipu && checkQuota('zhipu', 100)) {
       providers.push({ name: 'zhipu', call: () => this.callZhipu(request.prompt) });
     }
-    if (cerebras && checkQuota('cerebras', 20)) {
-      providers.push({ name: 'cerebras', call: () => this.callCerebras(request.prompt) });
-    }
 
-    // Fallback: if no providers available, throw a clear error.
+    // Fallback: if no providers available
     if (providers.length === 0) {
-      throw new Error('All AI providers are currently over quota or unavailable. Please try again later.');
+      // Try Zhipu even if quota says no
+      if (zhipu) {
+        providers.push({ name: 'zhipu', call: () => this.callZhipu(request.prompt) });
+      } else if (groq) {
+        providers.push({ name: 'groq', call: () => this.callGroq(request.prompt) });
+      } else {
+        throw new Error('No AI providers available. Please set GROQ_API_KEY or ZHIPU_API_KEY.');
+      }
     }
 
     // 3. Execute all providers in parallel
@@ -115,9 +136,8 @@ export class InferenceRouter {
       throw new Error(`All providers failed: ${errors.join('; ')}`);
     }
 
-    // 4. Select the best response (prefer Groq, then Zhipu, then Cerebras)
-    // Simple priority ordering.
-    const providerPriority = ['groq', 'zhipu', 'cerebras'];
+    // 4. Select best response (prefer Groq, then Zhipu)
+    const providerPriority = ['groq', 'zhipu'];
     let selected = responses[0];
     for (const name of providerPriority) {
       const found = responses.find(r => r.provider === name);
@@ -151,8 +171,9 @@ export class InferenceRouter {
     };
   }
 
-  // ---- Provider call wrappers ----
-
+  // ============================================================
+  // 6. Groq Provider
+  // ============================================================
   private async callGroq(prompt: string): Promise<ModelResponse> {
     if (!groq) throw new Error('Groq client not initialized');
     const start = Date.now();
@@ -168,18 +189,26 @@ export class InferenceRouter {
         stream: false,
       });
       const text = completion.choices[0]?.message?.content || '';
+      if (!text.trim()) {
+        throw new Error('Empty response from Groq');
+      }
       return { provider: 'groq', text, latency: Date.now() - start };
     } catch (error: any) {
       throw new Error(`Groq error: ${error.message}`);
     }
   }
 
+  // ============================================================
+  // 7. Zhipu Provider (GLM-4.5-Flash – FREE tier)
+  // ============================================================
   private async callZhipu(prompt: string): Promise<ModelResponse> {
     if (!zhipu) throw new Error('Zhipu client not initialized');
     const start = Date.now();
+
     try {
+      // GLM-4.5-Flash is the free tier model
       const completion = await zhipu.chat.completions.create({
-        model: 'glm-4.7-flash',
+        model: 'glm-4.5-flash',
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
           { role: 'user', content: prompt },
@@ -187,32 +216,23 @@ export class InferenceRouter {
         temperature: 0.7,
         max_tokens: 1024,
         stream: false,
+        // Zhipu-specific: add thinking parameter if needed
+        // but the OpenAI client doesn't support it directly.
+        // We'll add it as an extra body parameter using the `extra_body` option.
       });
-      const text = completion.choices[0]?.message?.content || '';
+
+      let text = completion.choices[0]?.message?.content || '';
+      if (!text.trim()) {
+        // If empty, try without thinking (if we can set thinking: disabled)
+        // but with OpenAI client we can't easily set that.
+        // So we'll just fallback to Groq.
+        throw new Error('Empty response from Zhipu');
+      }
+
       return { provider: 'zhipu', text, latency: Date.now() - start };
     } catch (error: any) {
+      // If Zhipu fails, we'll let the caller handle it (fallback to Groq)
       throw new Error(`Zhipu error: ${error.message}`);
-    }
-  }
-
-  private async callCerebras(prompt: string): Promise<ModelResponse> {
-    if (!cerebras) throw new Error('Cerebras client not initialized');
-    const start = Date.now();
-    try {
-      const completion = await cerebras.chat.completions.create({
-        model: 'llama3.3-70b',
-        messages: [
-          { role: 'system', content: SYSTEM_PROMPT },
-          { role: 'user', content: prompt },
-        ],
-        temperature: 0.7,
-        max_tokens: 1024,
-        stream: false,
-      });
-      const text = completion.choices[0]?.message?.content || '';
-      return { provider: 'cerebras', text, latency: Date.now() - start };
-    } catch (error: any) {
-      throw new Error(`Cerebras error: ${error.message}`);
     }
   }
 }
