@@ -58,6 +58,7 @@ export default function RootLayout({
             <Header />
             <main className="min-h-screen">{children}</main>
             <Footer />
+            {/* SupportWidget is placed AFTER Footer, but uses fixed positioning */}
             <SupportWidget />
             <ServiceWorkerRegistration />
           </QueryProvider>

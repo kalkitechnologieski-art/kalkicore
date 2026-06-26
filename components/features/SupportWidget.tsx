@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Send, MessageCircle, Sparkles, Minimize2, Maximize2 } from 'lucide-react';
+import { X, Send, MessageCircle, Minimize2, Maximize2 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -21,7 +21,6 @@ export function SupportWidget() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
-  // Auto‑open only once per session
   useEffect(() => {
     const alreadyOpened = sessionStorage.getItem('kalki_support_opened');
     if (!alreadyOpened) {
@@ -33,7 +32,6 @@ export function SupportWidget() {
     }
   }, []);
 
-  // Auto‑greeting
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       setMessages([
@@ -46,12 +44,10 @@ export function SupportWidget() {
     }
   }, [isOpen, messages]);
 
-  // Auto‑scroll
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  // Auto‑resize textarea
   useEffect(() => {
     if (inputRef.current) {
       inputRef.current.style.height = 'auto';
@@ -95,14 +91,14 @@ export function SupportWidget() {
 
   return (
     <>
-      {/* Floating Button – new gradient style */}
+      {/* Floating Button – fixed at bottom-right with high z-index */}
       {!isOpen && (
         <motion.button
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: 'spring', damping: 12 }}
           onClick={() => setIsOpen(true)}
-          className="support-outer support-flex fixed bottom-6 right-6 z-50 shadow-2xl"
+          className="support-outer support-flex fixed bottom-6 right-6 z-[9999] shadow-2xl"
           aria-label="Open support chat"
         >
           <svg
@@ -125,7 +121,7 @@ export function SupportWidget() {
         </motion.button>
       )}
 
-      {/* Chat Window – unchanged */}
+      {/* Chat Window */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -133,7 +129,7 @@ export function SupportWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.9 }}
             transition={{ type: 'spring', damping: 20 }}
-            className={`fixed bottom-6 right-6 z-50 w-96 max-w-[calc(100vw-2rem)] glass rounded-2xl shadow-2xl border border-primary/30 overflow-hidden ${
+            className={`fixed bottom-6 right-6 z-[9999] w-96 max-w-[calc(100vw-2rem)] glass rounded-2xl shadow-2xl border border-primary/30 overflow-hidden ${
               isMinimized ? 'h-16' : 'h-[500px] max-h-[80vh]'
             }`}
           >

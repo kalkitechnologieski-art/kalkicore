@@ -1702,8 +1702,3 @@ body {
 .input__container .absolute.bottom-full {
   z-index: 50;
 }
-
-/* Override to ensure fixed positioning */
-.support-outer {
-  position: fixed !important;
-}

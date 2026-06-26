@@ -53,25 +53,38 @@ export default function ContactPage() {
               Ready to transform your business? Let's talk.
             </p>
             <div className="space-y-6">
-              <div className="flex items-center gap-4 glass p-4 rounded-2xl hover:border-primary/30 transition-all">
-                <div className="p-3 bg-primary/10 rounded-full">
+              {/* Address – NEW */}
+              <div className="flex items-start gap-4 glass p-4 rounded-2xl hover:border-primary/30 transition-all">
+                <div className="p-3 bg-primary/10 rounded-full shrink-0">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Address</h3>
-                  <p className="text-text-muted text-sm">123 AI Avenue, Mumbai, India</p>
+                  <p className="text-text-muted text-sm leading-relaxed">
+                    802, PRESTIGE JINDAL CITY,<br />
+                    7TH CROSS, BENGALURU,<br />
+                    KARNATAKA – 560001
+                  </p>
                 </div>
               </div>
+
+              {/* Phone – NEW */}
               <div className="flex items-center gap-4 glass p-4 rounded-2xl hover:border-primary/30 transition-all">
                 <div className="p-3 bg-primary/10 rounded-full">
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-text-muted text-sm">+91 22 6897 5412</p>
+                  <a
+                    href="tel:+916261031710"
+                    className="text-text-muted text-sm hover:text-primary transition-colors"
+                  >
+                    +91 62610 31710
+                  </a>
                 </div>
               </div>
-              {/* Three emails */}
+
+              {/* Professional Emails */}
               <div className="flex flex-col gap-3 glass p-4 rounded-2xl hover:border-primary/30 transition-all">
                 <div className="flex items-center gap-3">
                   <div className="p-2 bg-primary/10 rounded-full">
@@ -116,6 +129,8 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
+
+              {/* Working Hours */}
               <div className="flex items-center gap-4 glass p-4 rounded-2xl hover:border-primary/30 transition-all">
                 <div className="p-3 bg-primary/10 rounded-full">
                   <Clock className="w-6 h-6 text-primary" />
@@ -125,6 +140,8 @@ export default function ContactPage() {
                   <p className="text-text-muted text-sm">Mon–Sat: 10:00 – 19:00 IST</p>
                 </div>
               </div>
+
+              {/* Support Widget CTA */}
               <div className="glass p-4 rounded-2xl border border-primary/20">
                 <div className="flex items-center gap-3">
                   <MessageCircle className="w-5 h-5 text-primary" />
