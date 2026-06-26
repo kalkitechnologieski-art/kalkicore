@@ -6,28 +6,19 @@ export const maxDuration = 30;
 
 export async function POST(req: NextRequest) {
   try {
-    const { prompt, sessionId, userId, useWebLLM } = await req.json();
+    const { prompt, userId } = await req.json();
 
-    // If client requests WebLLM, return a flag as JSON
-    if (useWebLLM) {
-      return new Response(
-        JSON.stringify({ type: 'webllm', prompt, sessionId, userId }),
-        { status: 200, headers: { 'Content-Type': 'application/json' } }
-      );
+    if (!prompt || typeof prompt !== 'string') {
+      return new Response(JSON.stringify({ error: 'Invalid prompt' }), { status: 400 });
     }
 
     const router = new InferenceRouter();
-    const result = await router.route({
-      userId: userId || 'anonymous',
-      sessionId: sessionId || 'default',
-      task: 'text',
-      prompt,
-      stream: true,
-    });
+    const result = await router.route(prompt, userId || 'anonymous');
 
-    // Create SSE stream
     const encoder = new TextEncoder();
-    const words = (result.text || '').split(' ');
+    const words = result.text.split(' ');
+
+    // Build a streaming response (simulate tokens)
     const stream = new ReadableStream({
       start(controller) {
         for (let i = 0; i < words.length; i++) {
@@ -48,9 +39,6 @@ export async function POST(req: NextRequest) {
     });
   } catch (error: any) {
     console.error('Chat API error:', error);
-    return new Response(
-      JSON.stringify({ error: error.message || 'Internal server error' }),
-      { status: 500 }
-    );
+    return new Response(JSON.stringify({ error: error.message || 'Internal server error' }), { status: 500 });
   }
 }
