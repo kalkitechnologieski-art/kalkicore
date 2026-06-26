@@ -65,7 +65,6 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
       <video
         autoPlay
         muted
@@ -78,10 +77,8 @@ export function Hero() {
         Your browser does not support the video tag.
       </video>
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/90 z-10" />
 
-      {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -96,88 +93,84 @@ export function Hero() {
           </p>
         </motion.div>
 
-        {/* Search Bar with Dropdown above buttons */}
-        <div className="flex flex-col items-center justify-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-            className="w-full max-w-2xl relative z-30"
-            ref={wrapperRef}
-          >
-            <form onSubmit={handleSearch} className="input__container w-full relative">
-              <div className="shadow__input glow-loop"></div>
-              <button type="submit" className="input__button__shadow" aria-label="Search">
-                <svg
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  height="20px"
-                  width="20px"
-                >
-                  <path
-                    d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z"
-                    fillRule="evenodd"
-                    fill="#17202A"
-                  />
-                </svg>
-              </button>
-              <input
-                type="text"
-                className="input__search"
-                placeholder="Search 212+ services..."
-                value={query}
-                onChange={handleInputChange}
-                onFocus={() => query.trim() && setShowDropdown(true)}
-              />
+        {/* Search Bar with dropdown below */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="flex justify-center mb-8"
+          ref={wrapperRef}
+        >
+          <form onSubmit={handleSearch} className="input__container w-full max-w-2xl relative">
+            <div className="shadow__input glow-loop"></div>
+            <button type="submit" className="input__button__shadow" aria-label="Search">
+              <svg
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                height="20px"
+                width="20px"
+              >
+                <path
+                  d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z"
+                  fillRule="evenodd"
+                  fill="#17202A"
+                />
+              </svg>
+            </button>
+            <input
+              type="text"
+              className="input__search"
+              placeholder="Search 212+ services..."
+              value={query}
+              onChange={handleInputChange}
+              onFocus={() => query.trim() && setShowDropdown(true)}
+            />
 
-              {/* Dropdown – positioned above the search bar, anchored to bottom of search container */}
-              {showDropdown && suggestions.length > 0 && (
-                <div className="absolute bottom-full left-0 right-0 mb-2 bg-background/95 backdrop-blur-xl border border-primary/20 rounded-xl overflow-hidden z-50 glass shadow-2xl">
-                  {suggestions.map((s) => (
-                    <button
-                      key={s.slug}
-                      onClick={() => handleSuggestionClick(s.slug)}
-                      className="w-full text-left px-4 py-3 hover:bg-white/5 transition-colors text-text border-b border-white/5 last:border-b-0"
-                    >
-                      <div className="font-medium">{s.title}</div>
-                      <div className="text-xs text-text-muted">{s.category}</div>
-                    </button>
-                  ))}
+            {showDropdown && suggestions.length > 0 && (
+              <div className="absolute top-full left-0 right-0 mt-2 bg-background/95 backdrop-blur-xl border border-primary/20 rounded-xl overflow-hidden z-50 glass shadow-2xl">
+                {suggestions.map((s) => (
                   <button
-                    onClick={() => router.push(`/search?q=${encodeURIComponent(query)}`)}
-                    className="w-full text-left px-4 py-2 text-primary text-sm hover:bg-white/5 transition-colors border-t border-white/5"
+                    key={s.slug}
+                    onClick={() => handleSuggestionClick(s.slug)}
+                    className="w-full text-left px-4 py-3 hover:bg-white/5 transition-colors text-text border-b border-white/5 last:border-b-0"
                   >
-                    View all results →
+                    <div className="font-medium">{s.title}</div>
+                    <div className="text-xs text-text-muted">{s.category}</div>
                   </button>
-                </div>
-              )}
-            </form>
-          </motion.div>
+                ))}
+                <button
+                  onClick={() => router.push(`/search?q=${encodeURIComponent(query)}`)}
+                  className="w-full text-left px-4 py-2 text-primary text-sm hover:bg-white/5 transition-colors border-t border-white/5"
+                >
+                  View all results →
+                </button>
+              </div>
+            )}
+          </form>
+        </motion.div>
 
-          {/* Buttons – now in a separate container below search */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-            className="flex flex-wrap justify-center gap-4 mt-6 relative z-20"
-          >
-            <Link href="/ki-bot" className="button">
-              <div className="button-outer">
-                <div className="button-inner">
-                  <span>Explore KI Bot</span>
-                </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="flex flex-wrap justify-center gap-4"
+        >
+          <Link href="/ki-bot" className="button">
+            <div className="button-outer">
+              <div className="button-inner">
+                <span>Explore KI Bot</span>
               </div>
-            </Link>
-            <Link href="/services" className="button">
-              <div className="button-outer">
-                <div className="button-inner">
-                  <span>Our Services</span>
-                </div>
+            </div>
+          </Link>
+          <Link href="/services" className="button">
+            <div className="button-outer">
+              <div className="button-inner">
+                <span>Our Services</span>
               </div>
-            </Link>
-          </motion.div>
-        </div>
+            </div>
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

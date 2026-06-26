@@ -71,13 +71,49 @@ export default function ContactPage() {
                   <p className="text-text-muted text-sm">+91 22 6897 5412</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4 glass p-4 rounded-2xl hover:border-primary/30 transition-all">
-                <div className="p-3 bg-primary/10 rounded-full">
-                  <Mail className="w-6 h-6 text-primary" />
+              {/* Three emails */}
+              <div className="flex flex-col gap-3 glass p-4 rounded-2xl hover:border-primary/30 transition-all">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-primary/10 rounded-full">
+                    <Mail className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-sm">Team</h3>
+                    <a
+                      href="mailto:team@kalki-intelligence.in"
+                      className="text-text-muted text-sm hover:text-primary transition-colors"
+                    >
+                      team@kalki-intelligence.in
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold">Email</h3>
-                  <p className="text-text-muted text-sm">hello@kalki.tech</p>
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-primary/10 rounded-full">
+                    <Mail className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-sm">CEO</h3>
+                    <a
+                      href="mailto:ceo@kalki-intelligence.in"
+                      className="text-text-muted text-sm hover:text-primary transition-colors"
+                    >
+                      ceo@kalki-intelligence.in
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-primary/10 rounded-full">
+                    <Mail className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-sm">Support</h3>
+                    <a
+                      href="mailto:support@kalki-intelligence.in"
+                      className="text-text-muted text-sm hover:text-primary transition-colors"
+                    >
+                      support@kalki-intelligence.in
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="flex items-center gap-4 glass p-4 rounded-2xl hover:border-primary/30 transition-all">

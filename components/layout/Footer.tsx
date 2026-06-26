@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BadgeCheck } from 'lucide-react';
+import { BadgeCheck, Mail } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -10,6 +10,37 @@ export function Footer() {
           <span className="font-serif text-2xl font-bold tracking-tight gold-gradient mb-4">
             KALKI INTELLIGENCE
           </span>
+
+          {/* Emails */}
+          <div className="flex flex-col items-center gap-1 mb-4 text-text-muted text-sm">
+            <div className="flex items-center gap-2">
+              <Mail className="w-4 h-4 text-primary" />
+              <a
+                href="mailto:team@kalki-intelligence.in"
+                className="hover:text-primary transition-colors"
+              >
+                team@kalki-intelligence.in
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <Mail className="w-4 h-4 text-primary" />
+              <a
+                href="mailto:ceo@kalki-intelligence.in"
+                className="hover:text-primary transition-colors"
+              >
+                ceo@kalki-intelligence.in
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <Mail className="w-4 h-4 text-primary" />
+              <a
+                href="mailto:support@kalki-intelligence.in"
+                className="hover:text-primary transition-colors"
+              >
+                support@kalki-intelligence.in
+              </a>
+            </div>
+          </div>
 
           {/* Legal & Company Info */}
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-widest text-text-muted mb-4">
@@ -44,7 +75,7 @@ export function Footer() {
             </a>
           </div>
 
-          {/* MSME & GST Badges (optional) */}
+          {/* MSME & GST Badges */}
           <div className="flex flex-wrap items-center justify-center gap-6 mb-4 text-text-muted text-xs">
             <div className="flex items-center gap-1">
               <BadgeCheck className="w-4 h-4 text-primary" />
