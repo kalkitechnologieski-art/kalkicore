@@ -6,7 +6,7 @@ interface Message {
   content: string;
 }
 
-export function useChat(sessionId: string) {
+export function useChat(sessionId: string, botType: 'support' | 'kibot' = 'kibot') {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isGenerating, setIsGenerating] = useState(false);
 
@@ -19,7 +19,7 @@ export function useChat(sessionId: string) {
       const response = await fetch('/api/model/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt, sessionId }),
+        body: JSON.stringify({ prompt, sessionId, botType }),
       });
 
       if (!response.ok) {
@@ -72,7 +72,7 @@ export function useChat(sessionId: string) {
     } finally {
       setIsGenerating(false);
     }
-  }, [sessionId]);
+  }, [sessionId, botType]);
 
   const clearMessages = useCallback(() => setMessages([]), []);
 

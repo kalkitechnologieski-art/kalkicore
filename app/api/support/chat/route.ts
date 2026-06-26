@@ -12,12 +12,11 @@ export async function POST(req: NextRequest) {
       return new Response(JSON.stringify({ error: 'Invalid messages' }), { status: 400 });
     }
 
-    // Extract the last user message (or combine)
-    const lastUserMessage = messages.filter((m: any) => m.role === 'user').pop();
-    const prompt = lastUserMessage?.content || 'Hello';
+    const lastUser = messages.filter((m: any) => m.role === 'user').pop();
+    const prompt = lastUser?.content || 'Hello';
 
     const router = new InferenceRouter();
-    const result = await router.route(prompt, 'support-user');
+    const result = await router.route(prompt, 'support-user', 'support');
 
     return new Response(JSON.stringify({ reply: result.text }), {
       headers: { 'Content-Type': 'application/json' },

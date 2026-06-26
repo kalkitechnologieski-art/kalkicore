@@ -1,0 +1,244 @@
+{
+  "brand": {
+    "name": "KALKI INTELLIGENCE",
+    "tagline": "Temple of Technology",
+    "mission": "To democratize AI for local businesses at affordable prices with guaranteed ROI.",
+    "vision": "A world where technology works for everyone, built on trust and integrity.",
+    "founded": "December 2025",
+    "msme": "UDYAM-MP-20-0113749",
+    "chairman": "Mrs. Shri Urmila Singh",
+    "ceo": "Mr. Nikhil",
+    "clients": "500+",
+    "ethics": "We are reforming the marketing industry – no hidden fees, guaranteed results."
+  },
+  "personas": {
+    "support": {
+      "name": "KALKI SUPPORT",
+      "personality": "Friendly, professional, 30+ years of sales experience, chill yet expert. Uses real-world examples. Guides clients naturally.",
+      "tone": "Warm, confident, conversational, empathetic.",
+      "goal": "Understand the customer's pain point, provide a relevant solution from our 212+ services, and guide them to the contact form when ready.",
+      "greeting": "👋 Hey there! I'm KALKI SUPPORT – your go-to expert for all things AI, marketing, and growth. I've helped 500+ businesses transform. What's on your mind today?"
+    },
+    "ki_bot": {
+      "name": "KALKI 6.0",
+      "personality": "The flagship AI model – intelligent, creative, and unstoppable. Answers anything, writes scripts, teaches, and strategizes.",
+      "tone": "Confident, inspirational, clear, and detailed.",
+      "goal": "Provide expert answers, content scripts, strategy, and teachings. Also recommend services if relevant.",
+      "greeting": "🧠 I'm KALKI 6.0 – the fastest, most intelligent AI on the planet. Ask me anything."
+    }
+  },
+  "services": [
+    {
+      "id": "ai-automation",
+      "name": "AI Automation",
+      "category": "AI & Automation",
+      "priceINR": "₹24,999",
+      "priceUSD": "$299",
+      "description": "Automate repetitive tasks with intelligent AI agents – save 20+ hours/week.",
+      "pain_points": ["Manual work overload", "Slow processes", "Human errors"],
+      "outcome": "24/7 automated workflows, 3x faster operations, zero errors.",
+      "example": "We helped a logistics company automate invoice processing – reduced time from 4 hours to 15 minutes."
+    },
+    {
+      "id": "seo-services",
+      "name": "SEO Services",
+      "category": "Digital Marketing",
+      "priceINR": "₹41,999",
+      "priceUSD": "$499",
+      "description": "Rank higher on Google with expert SEO strategies that guarantee traffic growth.",
+      "pain_points": ["No visibility", "Low website traffic", "Competitors outranking you"],
+      "outcome": "Top 3 rankings, 200%+ organic traffic increase.",
+      "example": "A client in Mumbai went from page 5 to #1 for 'AI marketing' in 6 weeks."
+    },
+    {
+      "id": "web-development",
+      "name": "Web Development",
+      "category": "Development",
+      "priceINR": "₹66,999",
+      "priceUSD": "$799",
+      "description": "Build stunning, high‑performance websites and web apps that convert.",
+      "pain_points": ["Outdated design", "Slow loading", "Poor mobile experience"],
+      "outcome": "Blazing-fast, mobile-first, SEO-optimized websites.",
+      "example": "We built a Next.js app for a startup that loads in under 1 second – their conversions doubled."
+    },
+    {
+      "id": "social-media-management",
+      "name": "Social Media Management",
+      "category": "Digital Marketing",
+      "priceINR": "₹29,999",
+      "priceUSD": "$349",
+      "description": "Grow your audience with engaging social media content and strategy.",
+      "pain_points": ["Inconsistent posting", "Low engagement", "No strategy"],
+      "outcome": "10x engagement, 50% follower growth in 3 months.",
+      "example": "A local café went from 200 followers to 5,000+ with our Instagram strategy."
+    },
+    {
+      "id": "gmb-seo",
+      "name": "Google My Business SEO",
+      "category": "Local SEO",
+      "priceINR": "₹20,999",
+      "priceUSD": "$249",
+      "description": "Optimise your local presence and attract nearby customers.",
+      "pain_points": ["Not showing on Google Maps", "Few reviews", "Low local traffic"],
+      "outcome": "Top local rankings, 5x more calls, 100+ reviews.",
+      "example": "A dentist in Delhi got 50 new patients in 30 days after our GMB optimization."
+    },
+    {
+      "id": "linkedin-marketing",
+      "name": "LinkedIn Marketing",
+      "category": "Social Media",
+      "priceINR": "₹33,999",
+      "priceUSD": "$399",
+      "description": "Leverage LinkedIn for B2B growth and networking.",
+      "pain_points": ["No leads on LinkedIn", "Weak personal brand", "Low engagement"],
+      "outcome": "3x more inbound leads, 10+ quality connections/week.",
+      "example": "A SaaS company generated 50 qualified leads in 2 months using our LinkedIn system."
+    },
+    {
+      "id": "digital-marketing",
+      "name": "Digital Marketing",
+      "category": "Digital Marketing",
+      "priceINR": "₹49,999",
+      "priceUSD": "$599",
+      "description": "Full‑service digital marketing – multi‑channel, PPC, email, and more.",
+      "pain_points": ["Fragmented marketing", "No ROI tracking", "Wasted ad spend"],
+      "outcome": "Integrated marketing, 300% ROI, clear analytics.",
+      "example": "We helped a real estate company generate ₹50 Cr in sales through a 360° digital campaign."
+    },
+    {
+      "id": "ai-chatbots",
+      "name": "AI Chatbots",
+      "category": "AI & Automation",
+      "priceINR": "₹37,999",
+      "priceUSD": "$449",
+      "description": "Intelligent chatbots for customer engagement – 24/7 support and sales.",
+      "pain_points": ["Slow response times", "Missed leads", "High support costs"],
+      "outcome": "Instant responses, 40% more leads captured, 70% support cost reduction.",
+      "example": "A travel agency automated 80% of customer queries with our AI chatbot."
+    },
+    {
+      "id": "video-production",
+      "name": "Video Production",
+      "category": "Content Creation",
+      "priceINR": "₹49,999",
+      "priceUSD": "$599",
+      "description": "Professional video content for your brand – explainers, promos, testimonials.",
+      "pain_points": ["No video content", "Poor quality", "High production costs"],
+      "outcome": "High-converting videos, 5x more engagement.",
+      "example": "A startup’s explainer video went viral – 1M views and 500+ leads."
+    },
+    {
+      "id": "content-writing",
+      "name": "Content Writing",
+      "category": "Content Creation",
+      "priceINR": "₹16,999",
+      "priceUSD": "$199",
+      "description": "High‑quality content for blogs, websites, and social media.",
+      "pain_points": ["No content", "Poor writing", "No SEO"],
+      "outcome": "SEO‑optimized, research‑based content that ranks.",
+      "example": "A client's blog traffic grew 300% in 3 months with our content strategy."
+    },
+    {
+      "id": "ecommerce-development",
+      "name": "E‑Commerce Development",
+      "category": "Development",
+      "priceINR": "₹83,999",
+      "priceUSD": "$999",
+      "description": "Build scalable online stores with payment integration and inventory management.",
+      "pain_points": ["No online store", "Clunky checkout", "Payment issues"],
+      "outcome": "Beautiful, fast, secure e‑commerce sites with 20%+ conversion rates."
+    },
+    {
+      "id": "cloud-consulting",
+      "name": "Cloud Consulting",
+      "category": "Consulting",
+      "priceINR": "₹29,999",
+      "priceUSD": "$349",
+      "description": "Expert guidance on cloud adoption, migration, and cost optimization.",
+      "pain_points": ["High cloud costs", "Security concerns", "Migration anxiety"],
+      "outcome": "30% cost reduction, secure, scalable infrastructure."
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "category": "AI & Automation",
+      "priceINR": "₹54,999",
+      "priceUSD": "$649",
+      "description": "Leverage data to drive business decisions with predictive modeling and dashboards.",
+      "pain_points": ["Data silos", "No insights", "Poor decisions"],
+      "outcome": "Actionable insights, 2x faster decision-making."
+    },
+    {
+      "id": "mobile-app-development",
+      "name": "Mobile App Development",
+      "category": "Development",
+      "priceINR": "₹1,09,999",
+      "priceUSD": "$1299",
+      "description": "Native and cross‑platform mobile apps with beautiful UI and performance.",
+      "pain_points": ["No mobile presence", "Bad user experience", "Low downloads"],
+      "outcome": "High‑rated apps, 100k+ downloads."
+    },
+    {
+      "id": "brand-strategy",
+      "name": "Brand Strategy",
+      "category": "Consulting",
+      "priceINR": "₹66,999",
+      "priceUSD": "$799",
+      "description": "Define and elevate your brand identity with market research and positioning.",
+      "pain_points": ["Unclear brand message", "No differentiation", "Low awareness"],
+      "outcome": "Clear, compelling brand that stands out."
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "category": "Development",
+      "priceINR": "₹45,999",
+      "priceUSD": "$549",
+      "description": "Protect your digital assets with vulnerability scanning and penetration testing.",
+      "pain_points": ["Security fears", "Hacks", "Compliance issues"],
+      "outcome": "100% security audit, peace of mind."
+    },
+    {
+      "id": "blockchain-development",
+      "name": "Blockchain Development",
+      "category": "Development",
+      "priceINR": "₹1,25,999",
+      "priceUSD": "$1499",
+      "description": "Build decentralized applications and smart contracts on Ethereum and Web3.",
+      "pain_points": ["Complexity", "Security", "Scalability"],
+      "outcome": "Secure, scalable, future‑proof blockchain solutions."
+    },
+    {
+      "id": "ux-ui-design",
+      "name": "UX/UI Design",
+      "category": "Design",
+      "priceINR": "₹37,999",
+      "priceUSD": "$449",
+      "description": "User‑centric design for web and mobile apps – wireframes, prototypes, testing.",
+      "pain_points": ["Bad UI", "Poor user flow", "High bounce rate"],
+      "outcome": "Intuitive, beautiful, high-conversion designs."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How is KALKI INTELLIGENCE different?",
+      "answer": "We guarantee ROI, charge transparently, and are an MSME registered company (UDYAM-MP-20-0113749) with 500+ happy clients."
+    },
+    {
+      "question": "Do you offer a free consultation?",
+      "answer": "Absolutely! We'll discuss your goals, identify pain points, and suggest the best services – no obligation."
+    },
+    {
+      "question": "What is your pricing?",
+      "answer": "We have flexible plans from ₹4,999/month for starter services, up to custom enterprise solutions. Every plan delivers measurable ROI."
+    },
+    {
+      "question": "How long does it take to see results?",
+      "answer": "Most clients see improvements in 4-6 weeks. We provide regular reports and are with you every step."
+    }
+  ],
+  "contact_flow": {
+    "trigger": "When the user expresses interest, says they are ready, or asks about pricing/next steps.",
+    "message": "That's great! I'll connect you with our team. Click the 'Get Started' button and fill in your details – we'll be in touch within 24 hours. 🚀"
+  }
+}

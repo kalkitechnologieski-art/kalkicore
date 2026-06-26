@@ -1,23 +1,66 @@
 import Link from 'next/link';
-import { Github, Chrome, BadgeCheck } from 'lucide-react';
+import { BadgeCheck } from 'lucide-react';
 
 export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-background/80 backdrop-blur-sm py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span className="font-serif text-2xl font-bold tracking-tight">KALKI <span className="text-primary">AI</span></span>
-        <div className="flex flex-wrap items-center justify-center gap-6 my-6">
-          <a href="https://github.com/CodeWander-666-github" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-primary transition-colors"><Github className="w-5 h-5" /></a>
-          <a href="#" className="text-text-muted hover:text-primary transition-colors"><Chrome className="w-5 h-5" /></a>
-          <div className="flex items-center gap-1 text-text-muted"><BadgeCheck className="w-5 h-5 text-primary" /><span className="text-xs font-bold uppercase tracking-wider">GST</span></div>
-          <div className="flex items-center gap-1 text-text-muted"><BadgeCheck className="w-5 h-5 text-primary" /><span className="text-xs font-bold uppercase tracking-wider">Udyam</span></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center">
+          {/* Brand */}
+          <span className="font-serif text-2xl font-bold tracking-tight gold-gradient mb-4">
+            KALKI INTELLIGENCE
+          </span>
+
+          {/* Legal & Company Info */}
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-widest text-text-muted mb-4">
+            <Link href="/legal/privacy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-white/20">|</span>
+            <Link href="/legal/terms" className="hover:text-primary transition-colors">
+              Terms & Conditions
+            </Link>
+            <span className="text-white/20">|</span>
+            <span className="text-primary/60">MSME: UDYAM-MP-20-0113749</span>
+          </div>
+
+          {/* LinkedIn Glitch Button */}
+          <div className="mb-4">
+            <a
+              href="https://www.linkedin.com/posts/kalki-intelligence_business-development-internship-role-definition-activity-7475131797299716096-eOm1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEfz0fwB7P-xW28g_m5VHA8RJtFZdRn3kAs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-wrapper small"
+            >
+              <button className="spiderverse-button">
+                LinkedIn
+                <div className="glitch-layers">
+                  <div className="glitch-layer layer-1">LinkedIn</div>
+                  <div className="glitch-layer layer-2">LinkedIn</div>
+                </div>
+                <div className="noise"></div>
+                <div className="glitch-slice"></div>
+              </button>
+            </a>
+          </div>
+
+          {/* MSME & GST Badges (optional) */}
+          <div className="flex flex-wrap items-center justify-center gap-6 mb-4 text-text-muted text-xs">
+            <div className="flex items-center gap-1">
+              <BadgeCheck className="w-4 h-4 text-primary" />
+              <span className="font-bold uppercase tracking-wider">MSME Registered</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <BadgeCheck className="w-4 h-4 text-primary" />
+              <span className="font-bold uppercase tracking-wider">GST Compliant</span>
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <p className="text-xs text-text-muted/60 uppercase tracking-widest">
+            &copy; 2017-2026. KALKI INTELLIGENCE – Temple of Technology.
+          </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 text-xs font-bold uppercase tracking-widest text-text-muted">
-          <Link href="/legal/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-          <span className="text-white/20">|</span>
-          <Link href="/legal/terms" className="hover:text-primary transition-colors">Terms & Conditions</Link>
-        </div>
-        <p className="mt-6 text-xs text-text-muted/60">&copy; 2017-2026. Kalki Technologies – Temple of Technology.</p>
       </div>
     </footer>
   );

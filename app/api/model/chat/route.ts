@@ -6,19 +6,18 @@ export const maxDuration = 30;
 
 export async function POST(req: NextRequest) {
   try {
-    const { prompt, userId } = await req.json();
+    const { prompt, userId, botType = 'kibot' } = await req.json();
 
     if (!prompt || typeof prompt !== 'string') {
       return new Response(JSON.stringify({ error: 'Invalid prompt' }), { status: 400 });
     }
 
     const router = new InferenceRouter();
-    const result = await router.route(prompt, userId || 'anonymous');
+    const result = await router.route(prompt, userId || 'anonymous', botType);
 
     const encoder = new TextEncoder();
     const words = result.text.split(' ');
 
-    // Build a streaming response (simulate tokens)
     const stream = new ReadableStream({
       start(controller) {
         for (let i = 0; i < words.length; i++) {

@@ -1,110 +1,110 @@
 import { v4 as uuidv4 } from 'uuid';
 import OpenAI from 'openai';
-import knowledge from '@/lib/content/knowledge.json';
+import knowledge from '@/lib/content/knowledge-full.json';
 
-// ============================================================
-// 1. Initialize Providers (OpenAI-compatible clients)
-// ============================================================
+// ------------------------------------------------------------
+// 1. Initialize all providers
+// ------------------------------------------------------------
 const groq = process.env.GROQ_API_KEY
-  ? new OpenAI({
-      baseURL: 'https://api.groq.com/openai/v1',
-      apiKey: process.env.GROQ_API_KEY,
-    })
+  ? new OpenAI({ baseURL: 'https://api.groq.com/openai/v1', apiKey: process.env.GROQ_API_KEY })
   : null;
 
 const zhipu = process.env.ZHIPU_API_KEY
-  ? new OpenAI({
-      baseURL: 'https://open.bigmodel.cn/api/paas/v4',
-      apiKey: process.env.ZHIPU_API_KEY,
-    })
+  ? new OpenAI({ baseURL: 'https://open.bigmodel.cn/api/paas/v4', apiKey: process.env.ZHIPU_API_KEY })
   : null;
 
-// ============================================================
-// 2. Build System Prompt
-// ============================================================
-function buildSystemPrompt(): string {
-  let prompt = 'You are KALKI AI, the intelligent assistant for KALKI TECHNOLOGIES – the Temple of Technology. ';
-  prompt += `Mission: ${knowledge.brand.mission}. Vision: ${knowledge.brand.vision}. `;
-  prompt += `Products: KI Bot (fastest AI chatbot), KI Cloud (community hub), 212+ services. `;
-  prompt += `Pricing: Starter ₹4,999/mo, Pro ₹9,999/mo, Enterprise custom. `;
-  prompt += 'Be helpful, concise, and friendly. Keep responses under 3 sentences unless asked for details. ';
-  prompt += 'If you don’t know, say so.';
-  return prompt;
+const cerebras = process.env.CEREBRAS_API_KEY
+  ? new OpenAI({ baseURL: 'https://api.cerebras.ai/v1', apiKey: process.env.CEREBRAS_API_KEY })
+  : null;
+
+// ------------------------------------------------------------
+// 2. Build context‑aware prompts
+// ------------------------------------------------------------
+function buildKnowledgeContext(): string {
+  let ctx = `Company: ${knowledge.brand.name} (MSME: ${knowledge.brand.msme}). `;
+  ctx += `Mission: ${knowledge.brand.mission}. Ethics: ${knowledge.brand.ethics}. `;
+  ctx += `Clients: ${knowledge.brand.clients}. Founded: ${knowledge.brand.founded}. `;
+  ctx += `Services (${knowledge.services.length}+): `;
+  ctx += knowledge.services.map(s => `${s.name} (${s.category}) – ${s.description}. ROI: ${s.outcome}`).join('; ');
+  ctx += `. FAQs: ${knowledge.faqs.map(f => `Q:${f.question} A:${f.answer}`).join('; ')}.`;
+  return ctx;
 }
 
-const SYSTEM_PROMPT = buildSystemPrompt();
+const KNOWLEDGE_CONTEXT = buildKnowledgeContext();
 
-// ============================================================
-// 3. Simple token usage tracker (for demonstration)
-// ============================================================
-// In production, use Supabase or Redis.
-const usageTracker: Record<string, { count: number; resetTime: number }> = {};
-
-function checkQuota(provider: string, limit: number = 100): boolean {
-  const now = Date.now();
-  const key = provider;
-  if (!usageTracker[key]) {
-    usageTracker[key] = { count: 0, resetTime: now + 24 * 60 * 60 * 1000 };
-    return true;
-  }
-  const entry = usageTracker[key];
-  if (now > entry.resetTime) {
-    entry.count = 0;
-    entry.resetTime = now + 24 * 60 * 60 * 1000;
-  }
-  if (entry.count >= limit) return false;
-  entry.count++;
-  return true;
+// ------------------------------------------------------------
+// 3. System prompts
+// ------------------------------------------------------------
+function buildSupportSystemPrompt(): string {
+  return `You are KALKI SUPPORT, a friendly, expert sales professional with 30+ years of experience.
+You are chill, confident, and empathetic. You use real‑world examples.
+Your goal: Understand the customer's pain point, suggest a relevant service from our offerings, and guide them to the contact form when ready.
+Tone: Warm, conversational, professional.
+Knowledge: ${KNOWLEDGE_CONTEXT}
+When the user expresses interest, say: "${knowledge.contact_flow.message}"
+Be concise but thorough. Use examples.`;
 }
 
-// ============================================================
-// 4. Main Router
-// ============================================================
+function buildKIBotSystemPrompt(): string {
+  return `You are KALKI 6.0, the flagship AI model – intelligent, creative, unstoppable.
+You answer anything, write scripts, teach, strategize, and suggest services if relevant.
+Tone: Confident, inspirational, clear.
+Knowledge: ${KNOWLEDGE_CONTEXT}
+Greeting: "${knowledge.personas.ki_bot.greeting}"
+Be detailed, use examples, and inspire.`;
+}
+
+const SUPPORT_SYSTEM_PROMPT = buildSupportSystemPrompt();
+const KIBOT_SYSTEM_PROMPT = buildKIBotSystemPrompt();
+
+// ------------------------------------------------------------
+// 4. Main Router with parallel execution
+// ------------------------------------------------------------
 export class InferenceRouter {
-  async route(prompt: string, userId: string = 'anonymous'): Promise<{ text: string; provider: string }> {
-    // Try Groq first
-    if (groq && checkQuota('groq', 50)) {
-      try {
-        const text = await this.callProvider(groq, prompt);
-        return { text, provider: 'groq' };
-      } catch (error) {
-        console.warn('Groq failed:', error);
-      }
+  async route(prompt: string, userId: string = 'anonymous', botType: 'support' | 'kibot' = 'kibot'): Promise<{ text: string; provider: string }> {
+    const systemPrompt = botType === 'support' ? SUPPORT_SYSTEM_PROMPT : KIBOT_SYSTEM_PROMPT;
+
+    const providers = [];
+    if (groq) providers.push({ name: 'groq', client: groq, model: 'mixtral-8x7b-32768' });
+    if (zhipu) providers.push({ name: 'zhipu', client: zhipu, model: 'glm-4.5-flash' });
+    if (cerebras) providers.push({ name: 'cerebras', client: cerebras, model: 'llama3.3-70b' });
+
+    if (providers.length === 0) {
+      return { text: 'No AI providers available. Please set GROQ_API_KEY, ZHIPU_API_KEY, or CEREBRAS_API_KEY.', provider: 'fallback' };
     }
 
-    // Fallback to Zhipu
-    if (zhipu && checkQuota('zhipu', 100)) {
+    const calls = providers.map(async (p) => {
       try {
-        const text = await this.callProvider(zhipu, prompt);
-        return { text, provider: 'zhipu' };
-      } catch (error) {
-        console.warn('Zhipu failed:', error);
+        const completion = await p.client.chat.completions.create({
+          model: p.model,
+          messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: prompt },
+          ],
+          temperature: 0.7,
+          max_tokens: 1024,
+          stream: false,
+        });
+        const text = completion.choices[0]?.message?.content?.trim() || '';
+        return { provider: p.name, text };
+      } catch (err) {
+        return { provider: p.name, text: '', error: String(err) };
       }
-    }
-
-    // Final fallback – default message
-    return {
-      text: 'I’m currently experiencing high demand. Please try again in a moment.',
-      provider: 'fallback',
-    };
-  }
-
-  private async callProvider(client: OpenAI, prompt: string): Promise<string> {
-    const completion = await client.chat.completions.create({
-      model: client.baseURL?.includes('groq')
-        ? 'mixtral-8x7b-32768'
-        : 'glm-4.5-flash',
-      messages: [
-        { role: 'system', content: SYSTEM_PROMPT },
-        { role: 'user', content: prompt },
-      ],
-      temperature: 0.7,
-      max_tokens: 1024,
-      stream: false,
     });
 
-    const text = completion.choices[0]?.message?.content?.trim() || '';
-    if (!text) throw new Error('Empty response');
-    return text;
+    const results = await Promise.allSettled(calls);
+    let selected = { provider: 'fallback', text: '' };
+    for (const r of results) {
+      if (r.status === 'fulfilled' && r.value.text) {
+        selected = r.value;
+        break;
+      }
+    }
+
+    if (!selected.text) {
+      return { text: 'I’m currently experiencing high demand. Please try again in a moment.', provider: 'fallback' };
+    }
+
+    return selected;
   }
 }
