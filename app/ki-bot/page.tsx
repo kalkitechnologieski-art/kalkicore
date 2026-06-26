@@ -2,16 +2,15 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { useChat } from '@/hooks/useChat';
+import { useWebLLM } from '@/hooks/useWebLLM';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Send,
   Sparkles,
-  Cpu,
-  Zap,
+  Menu,
+  X,
   Plus,
   Trash2,
-  Settings,
-  ChevronDown,
   Copy,
   User,
   Bot,
@@ -19,7 +18,9 @@ import {
   PanelLeftOpen,
   Crown,
   Gem,
+  Loader2,
 } from 'lucide-react';
+import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
@@ -34,10 +35,12 @@ interface Message {
 export default function KIBotPage() {
   const [sessionId] = useState(() => `session-${Date.now()}`);
   const { messages, sendMessage, isGenerating, clearMessages } = useChat(sessionId);
+  const { isLoaded: webllmLoaded, progress: webllmProgress, status: webllmStatus } = useWebLLM();
   const [input, setInput] = useState('');
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  const [selectedModel, setSelectedModel] = useState('webllm');
   const [conversations, setConversations] = useState<{ id: string; title: string; preview: string }[]>([]);
+  const [thinkingExpanded, setThinkingExpanded] = useState(false);
+  const [showThinking, setShowThinking] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const messagesContainerRef = useRef<HTMLDivElement>(null);
@@ -59,9 +62,14 @@ export default function KIBotPage() {
   useEffect(() => {
     if (messages.length === 1 && messages[0].role === 'user') {
       const title = messages[0].content.slice(0, 30) + (messages[0].content.length > 30 ? '...' : '');
-      setConversations(prev => [{ id: sessionId, title, preview: title }, ...prev]);
+      setConversations((prev) => [{ id: sessionId, title, preview: title }, ...prev]);
     }
   }, [messages, sessionId]);
+
+  // Show thinking when generating
+  useEffect(() => {
+    setShowThinking(isGenerating);
+  }, [isGenerating]);
 
   const handleSend = async () => {
     if (!input.trim() || isGenerating) return;
@@ -88,13 +96,55 @@ export default function KIBotPage() {
     setTimeout(() => setIsCopied(false), 2000);
   };
 
-  const models = [
-    { id: 'webllm', label: 'WebLLM (Browser)', icon: Cpu },
-    { id: 'vllm', label: 'KALKI Cloud', icon: Zap },
-    { id: 'grok', label: 'Grok (xAI)', icon: Sparkles },
-    { id: 'zhipu', label: 'Zhipu AI', icon: Sparkles },
-    { id: 'cerebras', label: 'Cerebras', icon: Sparkles },
-  ];
+  // Thinking indicator
+  const ThinkingIndicator = () => {
+    if (!showThinking) return null;
+    return (
+      <div className="flex justify-start">
+        <div className="glass p-4 rounded-2xl border border-white/10 flex flex-col gap-2 backdrop-blur-md max-w-2xl">
+          <div className="flex items-center gap-3">
+            <div className="flex gap-1.5">
+              <span className="w-2.5 h-2.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0s' }} />
+              <span className="w-2.5 h-2.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.2s' }} />
+              <span className="w-2.5 h-2.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.4s' }} />
+            </div>
+            <span className="text-sm text-text-muted">KALKI is thinking...</span>
+            <button
+              onClick={() => setThinkingExpanded(!thinkingExpanded)}
+              className="text-xs text-text-muted hover:text-primary transition-colors"
+            >
+              {thinkingExpanded ? 'Collapse' : 'Expand'}
+            </button>
+          </div>
+          {thinkingExpanded && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="text-xs text-text-muted/70 space-y-1 border-t border-white/10 pt-2 mt-1"
+            >
+              <div className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-green-400 rounded-full" />
+                <span>Groq: {webllmLoaded ? 'ready' : 'downloading...'}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-blue-400 rounded-full" />
+                <span>Zhipu: {webllmLoaded ? 'ready' : 'waiting...'}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-purple-400 rounded-full" />
+                <span>Cerebras: {webllmLoaded ? 'ready' : 'waiting...'}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full" />
+                <span>WebLLM: {webllmStatus} {webllmProgress}%</span>
+              </div>
+            </motion.div>
+          )}
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="flex h-full w-full bg-background">
@@ -111,7 +161,10 @@ export default function KIBotPage() {
               <Gem className="w-5 h-5 text-primary" />
               <span className="font-serif text-xl gold-gradient">KI Bot</span>
             </div>
-            <button onClick={() => setSidebarOpen(false)} className="p-2 hover:bg-white/10 rounded-full transition-colors">
+            <button
+              onClick={() => setSidebarOpen(false)}
+              className="p-2 hover:bg-white/10 rounded-full transition-colors"
+            >
               <PanelLeftClose className="w-5 h-5" />
             </button>
           </div>
@@ -176,21 +229,36 @@ export default function KIBotPage() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <button className="p-2 hover:bg-white/10 rounded-full transition-colors relative group">
-              <Crown className="w-5 h-5 text-primary/50 group-hover:text-primary transition-colors" />
-              <span className="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full animate-pulse" />
-            </button>
-            <div className="relative">
-              <button className="flex items-center gap-2 glass px-4 py-2 rounded-full text-sm hover:border-primary/50 transition-colors">
-                <Settings className="w-4 h-4" />
-                <span>{models.find(m => m.id === selectedModel)?.label || 'Model'}</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
+            <Link
+              href="/contact"
+              className="p-2 hover:bg-white/10 rounded-full transition-colors relative group"
+            >
+              <Crown className="w-6 h-6 text-primary/70 group-hover:text-primary transition-colors" />
+              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-primary rounded-full animate-pulse" />
+              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[8px] text-text-muted opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Contact
+              </span>
+            </Link>
+            {/* Model label with progress bar */}
+            <div className="flex items-center gap-2 glass px-4 py-1.5 rounded-full text-sm relative">
+              <Sparkles className="w-4 h-4 text-primary" />
+              <span className="font-medium">KALKI 6.0</span>
+              {webllmProgress < 100 && (
+                <div className="absolute -bottom-1 left-0 right-0 h-1 bg-white/10 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-primary transition-all duration-300"
+                    style={{ width: `${Math.min(webllmProgress, 100)}%` }}
+                  />
+                </div>
+              )}
+              {webllmLoaded && (
+                <span className="text-[8px] text-green-400">● Live</span>
+              )}
             </div>
           </div>
         </div>
 
-        {/* Messages (scrollable) */}
+        {/* Messages */}
         <div
           ref={messagesContainerRef}
           className="flex-1 overflow-y-auto p-6 space-y-6 scroll-smooth"
@@ -208,8 +276,8 @@ export default function KIBotPage() {
                   <Sparkles className="w-20 h-20 text-primary/30 mx-auto mb-4" />
                   <div className="absolute inset-0 animate-ping rounded-full bg-primary/5" />
                 </div>
-                <h2 className="text-3xl font-serif gold-gradient">KALKI Bot</h2>
-                <p className="text-text-muted mt-2 opacity-70">Ask me anything – I'm here to help.</p>
+                <h2 className="text-3xl font-serif gold-gradient">KALKI 6.0</h2>
+                <p className="text-text-muted mt-2 opacity-70">Parallel multi‑model ensemble at your service.</p>
               </motion.div>
             </div>
           )}
@@ -265,22 +333,11 @@ export default function KIBotPage() {
               </motion.div>
             ))}
           </AnimatePresence>
-          {isGenerating && (
-            <div className="flex justify-start">
-              <div className="glass p-4 rounded-2xl border border-white/10 flex items-center gap-3 backdrop-blur-md">
-                <div className="flex gap-1.5">
-                  <span className="w-2.5 h-2.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0s' }} />
-                  <span className="w-2.5 h-2.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.2s' }} />
-                  <span className="w-2.5 h-2.5 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.4s' }} />
-                </div>
-                <span className="text-xs text-text-muted">KALKI is thinking...</span>
-              </div>
-            </div>
-          )}
+          <ThinkingIndicator />
           <div ref={messagesEndRef} />
         </div>
 
-        {/* Input bar with glowing border */}
+        {/* Input bar */}
         <div
           className={`p-4 border-t border-white/10 glass backdrop-blur-xl ${isGenerating ? 'chat-glowing-border' : ''}`}
         >

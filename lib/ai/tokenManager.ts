@@ -8,22 +8,33 @@ export class TokenManager {
     enterprise: { daily: 1000000, monthly: 30000000 },
   };
 
-  async checkQuota(userId: string, tier: 'free' | 'pro' | 'enterprise' = 'free'): Promise<boolean> {
+  async checkQuota(
+    userId: string,
+    tier: 'free' | 'pro' | 'enterprise' = 'free'
+  ): Promise<boolean> {
     const supabase = getSupabaseClient();
     const today = new Date().toISOString().split('T')[0];
-    const { data } = await supabase
+
+    const { data, error } = await supabase
       .from('token_usage')
       .select('total_tokens')
       .eq('user_id', userId)
       .gte('timestamp', today)
       .maybeSingle();
-    const used = data?.total_tokens ?? 0;
+
+    if (error) {
+      console.error('Quota check error:', error);
+      // If error, allow (or deny based on policy)
+      return false;
+    }
+
+    const used = data?.total_tokens || 0;
     return used < this.limits[tier].daily;
   }
 
   async logUsage(usage: TokenUsage): Promise<void> {
     const supabase = getSupabaseClient();
-    await supabase.from('token_usage').insert({
+    const { error } = await supabase.from('token_usage').insert({
       user_id: usage.userId,
       session_id: usage.sessionId,
       provider: usage.provider,
@@ -32,7 +43,11 @@ export class TokenManager {
       output_tokens: usage.outputTokens,
       total_tokens: usage.totalTokens,
       cost: usage.cost,
-      timestamp: new Date(usage.timestamp),
+      timestamp: new Date(usage.timestamp).toISOString(),
     });
+
+    if (error) {
+      console.error('Token usage logging error:', error);
+    }
   }
 }

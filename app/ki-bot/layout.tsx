@@ -11,6 +11,7 @@ export default function KIBotLayout({
       <Header />
       <main className="h-screen pt-20 overflow-hidden">{children}</main>
       <SupportWidget />
+      {/* Footer is intentionally omitted */}
     </>
   );
 }

@@ -4,15 +4,22 @@ set -e
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
+RED='\033[0;31m'
 NC='\033[0m'
 
-echo -e "${BLUE}🚀 Pushing all changes to Git...${NC}"
+echo -e "${BLUE}🚀 Pushing all changes to origin...${NC}"
 
-# Check if we are inside a Git repository
+# Ensure we are in a git repository
 if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-  echo -e "${YELLOW}⚠️ Not in a Git repository. Initializing...${NC}"
-  git init
-  git remote add origin https://github.com/CodeWander-666/kalkicore.git
+  echo -e "${RED}❌ Not in a git repository. Aborting.${NC}"
+  exit 1
+fi
+
+# Check if remote 'origin' exists
+if ! git remote get-url origin >/dev/null 2>&1; then
+  echo -e "${RED}❌ Remote 'origin' not found. Please set it with:${NC}"
+  echo "   git remote add origin <your-repo-url>"
+  exit 1
 fi
 
 # Check if there are changes to commit
@@ -21,7 +28,7 @@ if git diff --quiet && git diff --cached --quiet && [ -z "$(git ls-files --other
   exit 0
 fi
 
-# Ensure we are on the correct branch (e.g., main or new-branch)
+# Get current branch
 BRANCH=$(git branch --show-current)
 if [ -z "$BRANCH" ]; then
   echo -e "${YELLOW}⚠️ No branch checked out. Creating 'main'...${NC}"
@@ -40,14 +47,19 @@ echo -e "${BLUE}📄 Files to commit:${NC}"
 git status --short
 
 # Commit with a meaningful message
-COMMIT_MSG="🚀 KALKI 6.0 – Complete high‑end rebuild
-- Full services page with 212+ cards and filtering
-- Luxury KI Bot with DeepSeek‑style UI, RGB glow, streaming
-- KI Cloud with premium marketplace & social cards
-- Blog, Contact, About pages with glassmorphism
-- KALKI SUPPORT widget with Groq AI
-- All components, hooks, and AI orchestration
-- SEO optimised, mobile‑first, production‑ready"
+COMMIT_MSG="🚀 KALKI 6.0 – Production‑Ready Full Stack
+
+- Full Supabase integration (tables, RLS, realtime, functions)
+- High‑end inference architecture (WebLLM + Groq + Zhipu + Cerebras)
+- DeepSeek-R1-Distill-Qwen-1.5B (Q4_K_M) for WebLLM
+- Real‑time node network with heartbeat and count
+- Contact form saves leads to Supabase
+- Token usage logging and quota enforcement
+- Luxury UI with glassmorphism, animations, dark/light theme
+- All pages: Home, Services, KI Bot, KI Cloud, Blog, Contact, About
+- KALKI SUPPORT bot with Groq + knowledge base
+- SEO/AEO/GEO optimised
+- Fully responsive and mobile‑first"
 
 echo -e "${BLUE}📝 Commit message:${NC}"
 echo "$COMMIT_MSG"
@@ -62,9 +74,9 @@ fi
 
 git commit -m "$COMMIT_MSG"
 
-# Push to remote
+# Push to origin
 echo -e "${BLUE}⬆️ Pushing to origin/$BRANCH...${NC}"
 git push -u origin "$BRANCH"
 
 echo -e "${GREEN}✅ All changes pushed successfully!${NC}"
-echo -e "${BLUE}🔗 Repository URL: $(git config --get remote.origin.url)${NC}"
+echo -e "${BLUE}🔗 Repository: $(git remote get-url origin)${NC}"

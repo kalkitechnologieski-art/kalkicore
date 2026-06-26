@@ -1,0 +1,90 @@
+{
+  "brand": {
+    "name": "KALKI TECHNOLOGIES",
+    "tagline": "Temple of Technology",
+    "mission": "To democratize access to cutting‑edge AI by building a distributed, private, and ultra‑fast inference network.",
+    "vision": "A world where AI is open, private, and accessible to everyone – powered by the collective compute of millions of devices.",
+    "founded": 2017,
+    "founder": "Nikhil Singh",
+    "location": "Mumbai, India"
+  },
+  "products": {
+    "ki_bot": {
+      "name": "KI Bot",
+      "description": "The fastest AI chatbot powered by KALKI 6.0 inference engine. Uses parallel multi‑model ensemble (Groq, Zhipu, Cerebras, WebLLM) to deliver the best answer.",
+      "features": [
+        "Sub‑100ms latency",
+        "Private (runs locally with WebLLM option)",
+        "Multi‑model ensemble",
+        "Streaming responses",
+        "Markdown & code highlighting"
+      ]
+    },
+    "ki_cloud": {
+      "name": "KI Cloud",
+      "description": "Community hub with marketplace, social feed, and developer resources.",
+      "features": ["Community forums", "AI marketplace", "Social feed", "Developer API"]
+    },
+    "services": {
+      "name": "AI Services",
+      "description": "212+ AI‑powered services for businesses.",
+      "categories": ["AI Automation", "Digital Marketing", "Development", "Consulting"]
+    }
+  },
+  "pricing": {
+    "starter": {
+      "price": "₹4,999/month",
+      "features": ["10k tokens/day", "Browser inference", "Community access"]
+    },
+    "pro": {
+      "price": "₹9,999/month",
+      "features": ["100k tokens/day", "Cloud inference", "Priority support", "API access"]
+    },
+    "enterprise": {
+      "price": "Custom",
+      "features": ["Unlimited tokens", "Dedicated nodes", "SLA", "White‑label"]
+    }
+  },
+  "faqs": [
+    {
+      "question": "What is KALKI AI?",
+      "answer": "KALKI AI is a next‑generation AI platform that combines distributed inference, private AI (WebLLM), and a suite of digital marketing services. It’s the Temple of Technology."
+    },
+    {
+      "question": "How does the parallel ensemble work?",
+      "answer": "We send your prompt to Groq, Zhipu, Cerebras, and WebLLM simultaneously. Each model generates a response. Our ensemble engine then analyzes all responses and selects the most accurate, coherent, and helpful one – giving you the best possible answer."
+    },
+    {
+      "question": "Is my data private?",
+      "answer": "Yes. With WebLLM, inference runs entirely in your browser – no data ever leaves your device. For cloud models, we don’t store your conversations."
+    },
+    {
+      "question": "How fast is KALKI 6.0?",
+      "answer": "Sub‑100ms latency for the first token, and streaming responses feel instant. We use Groq’s lightning‑fast inference and optimize routing."
+    },
+    {
+      "question": "How do I get started?",
+      "answer": "Simply navigate to the KI Bot page and start chatting. For business inquiries, use the contact page or the king hat button on the KI Bot page."
+    },
+    {
+      "question": "What is WebLLM?",
+      "answer": "WebLLM is a library that runs large language models directly in your browser using WebGPU. It’s private, fast, and doesn’t require any cloud APIs."
+    },
+    {
+      "question": "Can I integrate KALKI AI into my own app?",
+      "answer": "Yes. We offer a developer API. Contact us via the king hat button for access."
+    }
+  ],
+  "team": [
+    { "name": "Nikhil Singh", "role": "Founder & Lead Developer" },
+    { "name": "Priya Patel", "role": "AI Researcher" },
+    { "name": "Acharya Nikhil", "role": "Digital Strategist" },
+    { "name": "Dr. Krishnakant", "role": "Healthcare AI Lead" },
+    { "name": "Rahul Sharma", "role": "Edge AI Engineer" }
+  ],
+  "distributed_inference": {
+    "description": "KALKI 6.0 uses a distributed node network where volunteer browsers contribute compute power. This enables near‑zero‑cost inference and massive scalability.",
+    "nodes": 1247,
+    "countries": 67
+  }
+}
